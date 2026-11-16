@@ -353,7 +353,7 @@ const SITE_URL = "https://lorenze-and-sheena.vercel.app/"
 // Keep it a 1200×630 JPG under ~300 KB — Messenger/WhatsApp silently drop larger images,
 // which is why forwarded links can lose their preview. Exported from /Details/imagepreview.png.
 // Use a NEW filename whenever the image changes — Facebook caches images by URL.
-const LINK_PREVIEW_IMAGE = "/monogram/linkPreview.png"
+const LINK_PREVIEW_IMAGE = "/Details/image copy.png"
 // Square fallback (600×600) for apps that show a small square thumbnail
 const LINK_PREVIEW_IMAGE_SQUARE = "/Details/image copy.png"
 
