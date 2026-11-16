@@ -1,0 +1,17 @@
+﻿Mode: Built-in image_gen tool. Final export: 1200 x 630 pixels, PNG.
+
+Edit the wedding preview to make the couple's photograph the FULL-CANVAS BACKGROUND, with an elegant aesthetic wedding-stationery treatment. Deliver one finished PNG designed for 1200 x 630 pixels, landscape.
+References: The original large user-supplied lake-and-mountain couple photo is the photographic source. The most recent 1200x630 preview is the text and typography reference to revise. Other copies of this same preview are not additional subjects.
+Requested change: use one continuous full-bleed photograph edge-to-edge across the ENTIRE canvas, including behind ALL text. Keep the lake, mountains, natural foliage and photographic texture clearly visible across the left side behind the lettering. Remove the opaque ivory half-panel of the previous preview. Apply only a translucent, soft champagne/ivory wash across the entire photograph, a little stronger beneath the left-side text; this is sheer and photographic, never a flat white block or separate panel. Retain strong warmth and natural color, with the couple clearly recognizable on the right. Preserve their actual identities, faces, clothing and natural pose from the original user photograph. Do not invent replacement people or duplicate the couple.
+Aesthetic design: fine champagne-gold botanical line art in the top-left and bottom-right corners, a few airy ivory and pale peach blossoms with muted sage leaves delicately tucked near the outer corners, and an elegant hairline inset gold border about 24px from the edges, subtly rounded arch detail only if harmonious. Decorations restrained, fine, tasteful, romantic, professionally composed; avoid covering faces or text. One fine small botanical divider between names and date. Refined warm espresso serif names and graceful italic 'and', muted warm terracotta small uppercase details. Ensure sufficient contrast for readable text against the sheer photo background.
+Composition: couple on the right with both faces comfortably inside the frame, text centered within approximately the left half, all important text at least 50px from image edges. Text hierarchy has dominant names, graceful connecting 'and', a smaller clear date and concise ceremony details. Natural background remains visible throughout. Leave breathing room around the text and decorative elements.
+Render all factual text accurately and verbatim:
+THE WEDDING OF
+Lorenze
+and
+Sheena
+December 15, 2026
+TUESDAY • 12:30 PM
+HOLY CROSS PARISH
+SAN ESTEBAN NABUA, CAMARINES SUR, PHILIPPINES
+The location may wrap into two balanced lines without changing spelling or punctuation. Keep the date and venue readable at final 1200x630 size. Do not add any other words, names, date details, monograms, watermarks or logos. Avoid opaque panels, split screen, oversaturated colors, heavy florals, busy decoration, cropped faces or text, flat white backgrounds, excessive haze over faces. Output exactly 1200x630 if supported.

@@ -348,14 +348,14 @@ guests: {
 
 // ── Website address (used for QR codes, link previews, table finder) ────────
 // NEXT_PUBLIC_SITE_URL (env) overrides this when set.
-const SITE_URL = "https://jiro-and-jaidee-wedding.digitalinvitationrsvp.com/"
+const SITE_URL = "https://lorenze-and-sheena.vercel.app/"
 // Image shown when the link is shared (Facebook, Messenger, Viber, WhatsApp, X, …).
 // Keep it a 1200×630 JPG under ~300 KB — Messenger/WhatsApp silently drop larger images,
 // which is why forwarded links can lose their preview. Exported from /Details/imagepreview.png.
 // Use a NEW filename whenever the image changes — Facebook caches images by URL.
 const LINK_PREVIEW_IMAGE = "/monogram/linkPreview.png"
 // Square fallback (600×600) for apps that show a small square thumbnail
-const LINK_PREVIEW_IMAGE_SQUARE = "/monogram/linkPreview.png"
+const LINK_PREVIEW_IMAGE_SQUARE = "/Details/image copy.png"
 
 // Site address with env override applied and no trailing slash — no need to edit
 export const canonicalSiteUrl = (process.env.NEXT_PUBLIC_SITE_URL ?? SITE_URL).replace(/\/$/, "")

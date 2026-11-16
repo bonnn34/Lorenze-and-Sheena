@@ -1,0 +1,18 @@
+﻿Mode: Built-in image_gen tool. Final PNG export: 1200 x 630 pixels.
+
+Use case: compositing / ads-marketing.
+Create a polished final wedding social-sharing image preview as a PNG, designed specifically on a 1200 × 630 pixel canvas (1.90476:1 landscape). Prioritize these pixel dimensions over the contradictory 4:1 phrase in the brief.
+Input images: Image 1 is the typography/color and factual wedding-details reference. Image 2 is the actual couple photograph to incorporate, preserving their true likeness, faces, clothing, and natural pose. Use the real photograph rather than painting or inventing replacement people.
+Art direction: refined, understated editorial wedding stationery. Warm luminous ivory, champagne beige and restrained soft terracotta typography echoing image 1. Use elegant high-contrast serif display typography for the names, graceful italic serif for 'and', and carefully spaced small capitals for supporting text. Clear dark warm brown text on ivory, sharp and highly legible.
+Composition: a new balanced horizontal layout specifically composed for this canvas. Place a beautifully framed natural photographic portrait of the couple on the right half, with their faces fully visible and comfortably inset from edges; retain the lake/mountain setting as a softly receding backdrop. Blend the left edge of the photo subtly into a luminous ivory area occupying approximately the left 54 percent. No hard central border or awkward seam. Make the couple large enough to feel personal and recognizable. Center a balanced text hierarchy in the left ivory area. Keep every text element at least 45 pixels inside the canvas; generous breathing room. A tiny understated fine line divider is acceptable; no large ornaments or extra objects. Photo should have an elegant warm natural grade, without haze across faces.
+Text to render exactly, preserving spelling and information, with these logical lines:
+"THE WEDDING OF"
+"Lorenze"
+"and"
+"Sheena"
+"December 15, 2026"
+"TUESDAY • 12:30 PM"
+"HOLY CROSS PARISH"
+"SAN ESTEBAN NABUA, CAMARINES SUR, PHILIPPINES"
+The two names are the dominant display text, each beautifully set on its own line, around 62–70px equivalent. 'and' is smaller, graceful, and positioned tightly enough that the two names read as one composition. Date is clear secondary serif at about 25px. Heading, time and venue are clean, refined uppercase around 13–16px; location must be easily legible, preferably use two balanced lines if necessary, without changing any words or adding punctuation. Keep the whole composition spacious within the 630px height.
+Constraints: use only supplied facts and reference photograph. No invented names, dates, logos, monograms, badges, website UI, watermarks, frames around the whole image, or extra text. No collage of duplicated faces. Avoid distorted likenesses, excess decorations, busy florals, crowded text, faint text, or text over faces. Deliver the completed flat image with precise typography, sharp detail and professional finish. Output dimensions exactly 1200x630 pixels if supported.

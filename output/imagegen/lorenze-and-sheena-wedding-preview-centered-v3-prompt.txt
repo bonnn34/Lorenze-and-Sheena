@@ -1,0 +1,19 @@
+﻿Mode: Built-in image_gen tool. Final export: 1200 x 630 pixels, PNG.
+
+Edit this wedding preview with one principal layout change: put BOTH people together in the MIDDLE of the image, horizontally centered as a pair. Output one finished landscape PNG composed for exactly 1200 x 630 pixels.
+Input image is the current wedding preview to edit. Preserve the same actual couple's likeness, faces, natural embrace, beige suit and peach/champagne gown, lake/mountain photographic setting, warm romantic color palette, delicate ivory-peach botanical corner ornaments and fine champagne-gold inset border.
+Recompose the full-bleed PHOTO background so the couple stands in the CENTER, not on the right. The midpoint between their faces must be approximately at x=600 in the 1200px canvas. Both faces must be unobscured, sharp and recognizable in the upper central area, their bodies occupying the middle third; the woman is slightly left of center and the man slightly right of center. Preserve their authentic pose and identities. One couple only; no duplicated people.
+Rebalance the typography around the centered pair: left side holds the small heading and the large elegant stacked names, right side holds the date, time, church and location in a refined balanced compact block. Keep the center free of text, especially faces. Use the left text area roughly x=65–370, the central couple roughly x=420–785, and the right text area roughly x=830–1135. The couple is the main centered visual anchor, and the side typography feels balanced. Use translucent warm ivory washes only over the left and right background areas for text contrast, while leaving the photographic scene visible across the ENTIRE canvas. No opaque panels.
+Left text verbatim:
+THE WEDDING OF
+Lorenze
+and
+Sheena
+Elegant high contrast espresso serif names, italic 'and', modest tracked uppercase heading. Name lettering approximately 56px equivalent, comfortably readable. Heading can break into two lines if needed.
+Right text verbatim:
+December 15, 2026
+TUESDAY • 12:30 PM
+HOLY CROSS PARISH
+SAN ESTEBAN NABUA, CAMARINES SUR, PHILIPPINES
+Date in elegant warm espresso serif around 26px, other details warm terracotta with excellent legibility. Location can wrap across 3 lines without changing any characters or punctuation. Right text block vertically centered as a group, small botanical divider tastefully integrated.
+Keep delicate botanical accents limited to top-left and bottom-right corners, thin gold inset border about 22px from edges, generous safe margins, all important text at least 50px from edges. No decorations or text over the couple's faces or central silhouette. Beautiful airy professional wedding design. Do not add or invent details, names, logos, monograms or watermarks. Avoid retaining the previous right-positioned couple, duplicated photo cutouts, altered faces, extra people, busy decorations, text clipping. Final output exactly 1200x630 pixels if supported.

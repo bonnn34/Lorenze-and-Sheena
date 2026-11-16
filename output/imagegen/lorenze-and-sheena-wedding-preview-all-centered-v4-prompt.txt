@@ -1,0 +1,17 @@
+﻿Mode: Built-in image_gen tool. Final export: 1200 x 630 pixels, PNG.
+
+Edit the attached wedding preview. The user's explicit change is that ALL TEXT must ALSO be IN THE MIDDLE, along with the centered couple. Make one refined 1200 x 630 landscape PNG wedding preview.
+Critical layout: one centered photographic couple as full-bleed background, and ONE CENTER-ALIGNED VERTICAL TEXT STACK on the central vertical axis x=600. Move every text item from the side columns into this single centered text composition. Do not use left and right text columns.
+Preserve the same actual couple's faces, likeness, beige suit, peach gown and natural pose; the same lake-and-mountain backdrop, warm ivory-champagne palette, thin inset gold border and restrained ivory-peach/sage botanical corner accents. Preserve a single couple only, together centered horizontally. Their faces are in the UPPER CENTER, fully visible and not covered by text, around y=55–195 at final size. Keep their head proportions natural and consistent with the reference. Their bodies remain a soft photographic background behind the central lettering.
+Text placement: center ALL text at x=600. Start heading below the faces around y=218, then names around y=270 and y=365 with a smaller italic 'and' between. Follow with date around y=432, time y=472, church y=510 and location around y=548–574. These are compositional guides: adjust spacing gracefully to achieve readable, airy alignment inside the canvas. Keep every text line horizontally centered on exactly the same central axis. The whole centered text group should fit within roughly x=280–920. Names large elegant espresso high-contrast serif around 60–64px equivalent, 'and' around 30px italic, date around 25px, supporting lines around 14–16px. Centered heading modest small uppercase with tracking. Refined warm terracotta details.
+Use a soft translucent champagne-ivory veil that gradually strengthens behind the text from y=205 downwards for readability over the couple's lower bodies, while retaining the photograph and landscape visibly across the entire canvas. Keep faces clear and naturally colored above this wash. Smooth airy transitions with no opaque text box, panel, split-screen or harsh rectangle. Layered romantic editorial wedding stationery.
+All exact text to render, centered as one vertical stack:
+THE WEDDING OF
+Lorenze
+and
+Sheena
+December 15, 2026
+TUESDAY • 12:30 PM
+HOLY CROSS PARISH
+SAN ESTEBAN NABUA, CAMARINES SUR, PHILIPPINES
+The location can use one or two centered lines, retaining exact spelling and punctuation. Keep text clear of outer botanical ornaments and at least 45px from the bottom edge. The upper corners can carry fine delicate floral accents, lower corners restrained, gold hairline border inset about 22px. Do not add facts, monograms, extra words, logos or watermarks. Avoid faces behind lettering, extra people, altered likenesses, duplicated faces, side columns, left-aligned text, overcrowding or cut-off text. Output exactly 1200x630 if supported.
