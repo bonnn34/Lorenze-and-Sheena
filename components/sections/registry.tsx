@@ -112,7 +112,7 @@ export function Registry() {
   const initial = reduceMotion ? false : "hidden"
 
   const buttonBg = c.button
-  const buttonText = "#FFFFFF"
+  const buttonText = "#40392F"
   const cardStyle = {
     background: c.card,
     border: `1px solid ${c.cardEdge}`,
@@ -347,7 +347,7 @@ export function Registry() {
                             className="block aspect-square h-auto w-full object-contain"
                           />
                           <span
-                            className="absolute -bottom-2 -right-2 flex h-7 w-7 items-center justify-center rounded-full text-white shadow-md"
+                            className="absolute -bottom-2 -right-2 flex h-7 w-7 items-center justify-center rounded-full text-[#40392F] shadow-md"
                             style={{ background: buttonBg, boxShadow: "0 0 0 2px #FFFFFF" }}
                             aria-hidden
                           >
@@ -461,7 +461,7 @@ export function Registry() {
             <button
               type="button"
               onClick={() => setZoomQr(null)}
-              className="absolute right-3 top-3 flex h-8 w-8 items-center justify-center rounded-full text-white transition-transform hover:rotate-90"
+              className="absolute right-3 top-3 flex h-8 w-8 items-center justify-center rounded-full text-[#40392F] transition-transform hover:rotate-90"
               style={{ background: buttonBg }}
               aria-label="Close"
             >

@@ -30,7 +30,7 @@ const aboveTheBeyond = localFont({
 // dusty-blue hairlines and a slate-blue diamond for ornaments.
 const TEAL = "var(--color-welcome-navy)"
 const BUTTON = "var(--color-welcome-heading)" // dusty blue — open question number
-const IVORY = "#FFF8F2"
+const IVORY = "#FAF3DE"
 const BODY = "var(--color-welcome-text)"
 const ACCENT = "var(--color-welcome-heading)"
 const SKY_TINT = (pct: number) => `color-mix(in srgb, var(--color-motif-medium) ${pct}%, white)`
@@ -320,8 +320,8 @@ export function FAQ({ background = true }: { background?: boolean } = {}) {
                           isOpen
                             ? {
                                 background:
-                                  "linear-gradient(180deg, #9B6554 0%, color-mix(in srgb, #9B6554 72%, #875547) 100%)",
-                                color: IVORY,
+                                  "linear-gradient(180deg, #F8EAAE 0%, color-mix(in srgb, #F8EAAE 72%, #F1D56C) 100%)",
+                                color: "#40392F",
                                 boxShadow: "0 0 0 2px #FFFFFF, 0 0 0 3px color-mix(in srgb, var(--color-motif-medium) 70%, transparent)",
                               }
                             : {

@@ -67,35 +67,35 @@ export type AttireColor = string | { name: string; hex: string }
 
 // ── The couple ──────────────────────────────────────────────────────────────
 const COUPLE = {
-  bride: "Jaidee Ashley C Mangahis",
-  brideNickname: "Jaidee",
-  groom: "Geronimo E Getida III",
-  groomNickname: "Jiro",
+  bride: "Sheena Pontillas",
+  brideNickname: "Sheena",
+  groom: "Lorenze Quiapo",
+  groomNickname: "Lorenze",
 }
 
 // ── Date & times ────────────────────────────────────────────────────────────
-const WEDDING_DATE = "February 27, 2027" // e.g. "June 5, 2027"
-const WEDDING_DAY = "Saturday" // 
+const WEDDING_DATE = "December 15, 2026" // e.g. "June 5, 2027"
+const WEDDING_DAY = "Tuesday" // 
 const TIMES = {
-  entourageCall: "2:00 PM", // entourage assembly
-  guestArrival: "2:30 PM", // guests arrival / assembly (shown in Event Details + reminders)
-  ceremony: "3:00 PM",
-  reception: "5:00 PM", // start of program
+  entourageCall: "11:30 PM", // entourage assembly
+  guestArrival: "12:30 PM", // guests arrival / assembly (shown in Event Details + reminders)
+  ceremony: "12:30 PM",
+  reception: "3:00 PM", // start of program
 }
 
 // ── Venues ──────────────────────────────────────────────────────────────────
 
 const CEREMONY_VENUE = {
-  name: "Casa Terrazola",
-  address: "Casa Terrazola, Paligawan Road, Brgy. Bucal, Silang, Cavite",
-  map: "https://maps.app.goo.gl/xVv4MkoxmTMeTtDn6",
-  photos: ["/Details/update-recep (1).jpg", "/Details/update-recep (2).jpg", "/Details/update-recep (3).jpg", "/Details/update-recep (4).jpg"],
+  name: "Holy Cross Parish",
+  address: "San Esteban, Nabua, Camarines Sur, Philippines",
+  map: "https://maps.app.goo.gl/b1ajdKDgktiYxCVFA",
+  photos: ["/Details/update-ceremony.jpg", "/Details/update-ceremony1.png",],
 }
 const RECEPTION_VENUE = {
-  name: " Sheperds Palace, Dalayap, Candaba, Pampanga",
-  address: "brgy Candaba, Pampanga, Philippines",
-  map: "https://maps.app.goo.gl/buRWssEcVn2vuJxf7",
-  photos: ["/Details/reception (4).jpg", "/Details/reception (5).jpg", "/Details/reception (6).jpg"],
+  name: "VILLA MARY ANN FUNCTION GARDEN",
+  address: "San Agustin, Iriga City, Camarines Sur, Philippines",
+  map: "https://maps.app.goo.gl/8QAfsr65t7ChUo6S9",
+  photos: ["/Details/update-reception (4).jpg", "/Details/update-reception (5).jpg"],
 }
 
 // ── Venue cards (Event Details section) ─────────────────────────────────────
@@ -108,7 +108,7 @@ const RECEPTION_VENUE = {
 // showDate     = show the big Month / Day / Year
 // showArrival  = show "Arrival: <guest arrival time>" (otherwise "At <time>")
 const VENUE_CARDS = {
-  layout: "combined" as "separate" | "combined",
+  layout: "separate" as "separate" | "combined",
   // Used when layout is "combined"
   combined: {
     badge: "Ceremony & Reception",
@@ -140,11 +140,11 @@ const VENUE_CARDS = {
 
 // ── RSVP & contact ──────────────────────────────────────────────────────────
 const RSVP = {
-  deadline: " January 31, 2026",
+  deadline: " November 25, 2026",
   coordinator: "{groom} / {bride}", // {groom} / {bride} → couple nicknames
   phone: "to be announced",
 }
-const HASHTAGS = ["#JiroAndJaidee"] // official wedding hashtag (Snap & Share, reminders)
+const HASHTAGS = ["#SheenAllmayLorenze"] // official wedding hashtag (Snap & Share, reminders)
 
 // ── Attire guide (Event Details → Attire Guidelines) ────────────────────────
 // SHOW = which cards to display AND their order, top to bottom. Examples:
@@ -165,10 +165,11 @@ const HASHTAGS = ["#JiroAndJaidee"] // official wedding hashtag (Snap & Share, r
 // Guest dress code colors — also shown in the "Dress Code" gentle reminder
 
 const DRESS_CODE_PALETTE: AttireColor[] = [
-  { name: "Deep Burgundy", hex: "#821B35" },
-  { name: "Silver Gray", hex: "#BFC0C5" },
-  { name: "Champagne Beige", hex: "#C7A68D" },
-  { name: "Classic Black", hex: "#252326" },
+  { name: "Soft Yellow", hex: "#F8E979" },
+  { name: "Pale Yellow", hex: "#F5E889" },
+  { name: "Lightest Yellow", hex: "#FFF6AA" },
+  { name: "Cream", hex: "#FFF9DB" },
+  { name: "Champagne", hex: "#F3E5CF" },
 ];
 
 // Attire groups shown in the Details section (components/sections/details.tsx).
@@ -178,7 +179,7 @@ const DRESS_CODE_PALETTE: AttireColor[] = [
 //   Each side (ladies / gentlemen) has a label, an optional intro (details, with an
 //   optional highlighted phrase) and an optional list of roles with what they wear.
 const ATTIRE = {
-  show: ["guests","sponsors","entourage"] as AttireGroupId[],
+  show: ["guests","sponsors",] as AttireGroupId[],
 
  
 entourage: {
@@ -265,13 +266,13 @@ sponsors: {
   dressCode: "Formal Attire",
 
   palette: [
-    { name: "Coral Pink", hex: "#F58F91" },
+    { name: "Champagne", hex: "#F3E5CF" },
     { name: "Classic Black", hex: "#242225" },
     { name: "Crisp White", hex: "#FFFFFF" },
   ] as AttireColor[],
 
   note:
-    "Elegant coral pink gowns for our Ninangs, " +
+    "Elegant champagne-colored gowns for our Ninangs, " +
     "beautifully complemented by classic black formal " +
     "suits for our Ninongs, creating a timeless and " +
     "sophisticated celebration.",
@@ -279,24 +280,24 @@ sponsors: {
   ladies: {
     label: "Ninang",
     details:
-      "Elegant floor-length coral pink gowns in " +
+      "Elegant floor-length champagne-colored gowns in " +
       "flowing chiffon, satin, or tulle. Delicate " +
       "floral embellishments, soft draping, and " +
       "tasteful beadwork are welcome. Any elegant " +
       "neckline or sleeve style may be worn.",
-    highlight: "Coral Pink Formal Gowns",
+    highlight: "champagne-colored gowns",
     roles: [] as { role: string; attire: string }[],
   },
 
   gentlemen: {
     label: "Ninong",
     details:
-      "Classic black formal suits paired with " +
+      "Classic black American-style suits paired with " +
       "crisp white long-sleeved dress shirts, " +
       "black neckties, and polished black " +
       "leather shoes. A white pocket square " +
       "may be added for an elegant finishing touch.",
-    highlight: "Classic Black Suits with Black Ties",
+    highlight: "black American-style suits",
     roles: [] as { role: string; attire: string }[],
   },
 },
@@ -308,37 +309,36 @@ sponsors: {
 guests: {
   title: "Wedding Guests",
   image: "/Details/guest.png",
-  dressCode: "Semi-Formal or Formal Attire",
+  dressCode: "Semi-Formal Attire",
   palette: DRESS_CODE_PALETTE,
 
   note:
-    "Celebrate with us in elegant shades of deep burgundy, " +
-    "silver gray, champagne beige, and classic black. " +
-    "Choose your favorite shade from our wedding palette " +
-    "for a timeless and beautifully coordinated celebration.",
+    "Celebrate with us in champagne, cream, or the lightest " +
+    "shades of yellow. We would love to see you in your best " +
+    "and most comfortable semi-formal attire that matches " +
+    "our wedding motif.",
 
   ladies: {
     label: "Ladies",
     details:
       "Elegant midi, ankle-length, or floor-length dresses " +
-      "in deep burgundy, silver gray, or champagne beige. " +
-      "Flowing chiffon, satin, and soft textured fabrics " +
-      "are encouraged. Delicate floral patterns, " +
-      "sophisticated draping, and tasteful embellishments " +
-      "are welcome.",
-    highlight: "Burgundy, Silver Gray & Champagne Beige Dresses",
+      "or dressy separates in champagne, cream, or the lightest " +
+      "shades of yellow. Flowing chiffon, satin, soft textures, " +
+      "gentle ruffles, and tasteful draping are welcome.",
+    highlight: "champagne, cream, or the lightest shades of yellow",
     roles: [] as { role: string; attire: string }[],
   },
 
   gentlemen: {
     label: "Gentlemen",
     details:
-      "Smart semi-formal or formal attire featuring " +
-      "collared shirts, tailored trousers, or blazers " +
-      "in classic black, champagne beige, silver gray, " +
-      "or deep burgundy. Suits are welcome but optional. " +
-      "Complete the look with polished leather dress shoes.",
-    highlight: "Classic Black, Burgundy & Neutral Formal Attire",
+      "Short-sleeve polos or dressy shirts in champagne, " +
+      "cream, or the lightest shades of yellow, paired with " +
+      "black tailored trousers. Choose your preferred style, " +
+      "such as a knit polo, linen button-up, camp-collar, " +
+      "or band-collar shirt. Complete the look with a dark " +
+      "belt and polished leather dress shoes.",
+    highlight: "champagne, cream, or the lightest shades of yellow",
     roles: [] as { role: string; attire: string }[],
   },
 },
@@ -367,9 +367,9 @@ const DISPLAY_MODE = "plain" as "photos" | "plain"
 
 // ── Shared images ───────────────────────────────────────────────────────────
 const BRAND = {
-  monogram: "/monogram/Elegant Black Calligraphic J Monogram.png", // monogram (loader, envelope, closing)
+  monogram: "/monogram/update-monogram.png", // monogram (loader, envelope, closing)
   coupleNameImage: "/Details/newcoupelNames.png", // couple-name lettering (loader, envelope)
-  seal: "/monogram/newSeal.png", // envelope wax seal
+  seal: "/monogram/update-seal.png", // envelope wax seal
   backgroundMusic: "/background_music/Palagi - Tj Monterde Violin Cover by BOJO.mp3",
 }
 
@@ -382,7 +382,7 @@ const COUPLE_PHOTOS = Array.from(
 
 // Portraits for the envelope reveal + the main cover photo (soft natural light, no heavy filters)
 const COUPLE_PORTRAITS = {
-  groom: "/mobile-background/couple (7).webp", // left photo in the envelope
+  groom: "/mobile-background/couple (6).webp", // left photo in the envelope
   bride: "/mobile-background/couple (12).webp", // right photo in the envelope
   cover: "/mobile-background/couple (1).webp", // photo pulled out of the envelope + home hero cover photo
 }
@@ -390,12 +390,12 @@ const COUPLE_PORTRAITS = {
 // Sliding photo marquee behind the loader and envelope.
 // Phones use the portrait shots in /public/mobile-background, desktop the landscape
 // shots in /public/desktop-background — update the counts when files are added/removed.
-const MARQUEE_PHOTO_COUNT = 26
+const MARQUEE_PHOTO_COUNT = 18
 const MARQUEE_PHOTOS = Array.from(
   { length: MARQUEE_PHOTO_COUNT },
   (_, i) => `/mobile-background/couple (${i + 1}).webp`,
 )
-const MARQUEE_PHOTO_COUNT_DESKTOP = 28
+const MARQUEE_PHOTO_COUNT_DESKTOP = 33
 const MARQUEE_PHOTOS_DESKTOP = Array.from(
   { length: MARQUEE_PHOTO_COUNT_DESKTOP },
   (_, i) => `/desktop-background/couple (${i + 1}).webp`,
@@ -405,14 +405,14 @@ const MARQUEE_PHOTOS_DESKTOP = Array.from(
 // Change a path here to swap it on every section at once.
 // To change ONE section only, override it there, e.g. decos: { ...SECTION_DECOS, footerVine: "" }
 const DECOR = {
-  cornerTopLeft: "/deco/new-deco/top-left.png",
-  cornerTopRight: "/deco/new-deco/top-right.png",
-  cornerBottomLeft: "/deco/new-deco/bottom-left.png",
-  cornerBottomRight: "/deco/new-deco/bottom-right.png",
+  cornerTopLeft: "/deco/update-deco/top-left.png",
+  cornerTopRight: "/deco/update-deco/top-right.png",
+  cornerBottomLeft: "/deco/update-deco/bottom-left.png",
+  cornerBottomRight: "/deco/update-deco/bottom-right.png",
   cornerOverlayTopLeft: "/deco/ivory-peach-v1/top-left-corner.png", // floral corner layered over the top vines (loader + envelope)
   cornerOverlayTopRight: "/deco/ivory-peach-v1/top-right-corner.png",
-  headerOrnament:  "/deco/new-deco/header.png", // small sprig above titles
-  footerVine: "/deco/new-deco/header.png", // long vine at section ends
+  headerOrnament:  "/deco/update-deco/middle-ornament.png", // small sprig above titles
+  footerVine: "/deco/update-deco/middle-ornament.png", // long vine at section ends
   sideLeft: "/deco/ivory-peach-v1/side-left.png", // love story side sprigs
   sideRight: "/deco/ivory-peach-v1/side-right.png",
 }
@@ -534,7 +534,7 @@ export const siteConfig = {
     // couple / wedding / ceremony; corners from `cornerDecos` below; headline from `headline`
     poster: {
       // Couple photo with a transparent background, shown in the middle (PNG/WebP; "" to hide)
-      coupleImage: "/Details/couple.png",
+      coupleImage: "/Details/couple-lakeside-no-background.png",
       kicker: "Together with their families", // small line above "Save the Date" ("" to hide)
       // Short lines either side of the couple, one entry per line ([] to hide a side)
       sideLeft: ["Two hearts", "One love", "Forever"],
@@ -547,13 +547,13 @@ export const siteConfig = {
       photoVeil: 0.35,
       // Colors — shared with the envelope screen that follows, so the look carries over
       theme: {
-        goldDark: "#6f4c1f", // gold lettering: shadow side
-        gold: "#a67c3d", // gold lettering: main tone
-        goldLight: "#d2b06e", // gold lettering: sheen
-        ink: "#5a4020", // small capital lines (kicker, date line, venue, status)
-        inkSoft: "#6b5230", // venue address
-        washTop: "#cee4f4", // color washed over the top of the photos (sky blue)
-        washBottom: "#f6dee6", // color washed over the bottom of the photos (blush)
+        goldDark: "#40392F", // gold lettering: shadow side
+        gold: "#40392F", // gold lettering: main tone
+        goldLight: "#40392F", // gold lettering: sheen
+        ink: "#8D5C34", // small capital lines (kicker, date line, venue, status)
+        inkSoft: "#8D5C34", // venue address
+        washTop: "#FAF3DE", // color washed over the top of the photos (sky blue)
+        washBottom: "#FAF3DE", // color washed over the bottom of the photos (blush)
       },
       // Optional image for the envelope paper that follows the poster (portrait image; its middle
       // band is used, lined up across the flap, front and pocket), e.g. "/loadingImages/kart.webp".
@@ -638,6 +638,7 @@ export const siteConfig = {
   },
   // Couple video (components/sections/couple-video.tsx)
   coupleVideo: {
+    enabled: false, // Set to true to show the couple video section
     title: "A Glimpse of Our Love",
     script: "Our Journey Together",
     subtitle: "Watch the journey that brought our hearts together",
@@ -713,7 +714,7 @@ chapters: [
   {
     date: "Little Moments",
     title: "The Beauty of Simple Things",
-    image: "/mobile-background/couple (25).webp",
+    image: "/mobile-background/couple (10).webp",
     imageAlt: "{groom} and {bride} together",
     imagePosition: "center 20%",
     paragraphs: [
@@ -723,7 +724,7 @@ chapters: [
   {
     date: "Growing Closer",
     title: "A Connection Worth Cherishing",
-    image: "/mobile-background/couple (21).webp",
+    image: "/mobile-background/couple (13).webp",
     imageAlt: "{groom} and {bride} together",
     imagePosition: "center 25%",
     paragraphs: [
@@ -753,7 +754,7 @@ chapters: [
   {
     date: "The Day We Said Yes",
     title: "The Beginning of Something Beautiful",
-    image: "/mobile-background/couple (25).webp",
+    image: "/mobile-background/couple (6).webp",
     imageAlt: "{groom} and {bride} together",
     imagePosition: "center 25%",
     paragraphs: [
@@ -830,7 +831,7 @@ chapters: [
     // Cards, colors, images and which groups show → QUICK SETUP → ATTIRE
     attire: {
       title: "Attire Guidelines",
-      description: "Our day is dressed in soft blues and warm peach. We'd love for you to wear them with us. Please find your role below.",
+      description: "We'd love for you to celebrate in the colors chosen for your role. Please find your attire guide below.",
       // Shown above a card's palette
       paletteTitle: "Dress Code Palette",
       paletteSubtitle: "", // script line under the palette title — "" hides it
@@ -868,7 +869,7 @@ chapters: [
           variant: "accent" as "accent" | "soft",
           showPalette: true,
           paragraphs: [
-            "Kindly come in semi-formal attire in soft blues or warm peach from our palette.",
+            "Kindly come in comfortable semi-formal attire in champagne, cream, or the lightest shades of yellow. Gentlemen may pair their shirts with black tailored trousers.",
             "Please avoid casual clothes and all-white outfits.",
           ],
         },
@@ -1426,7 +1427,7 @@ chapters: [
       {
         question: "What gift should we give?",
         answer:
-          "Your presence and prayers are the greatest gifts of all. Should you wish to bless us further, please see our [gift guide](#registry).",
+          "Your presence and prayers are the greatest gifts of all.",
       },
       {
         question: "Can I share the invitation online?",
@@ -1452,6 +1453,7 @@ chapters: [
   },
   // Gift guide (components/sections/registry.tsx). The signature uses couple.groomNickname / brideNickname.
   registry: {
+    enabled: false, // Set to true to show the gift guide section
     eyebrow: "A Token of Love",
     title: "Gift Guide",
     subtitle: "with gratitude",
@@ -1471,10 +1473,10 @@ chapters: [
       eyebrow: "var(--color-welcome-heading)",                                         // small caps labels, icons
       body: "var(--color-welcome-text)",                                               // paragraphs
       soft: "color-mix(in srgb, var(--color-welcome-text) 75%, white)",                // "With joyful hearts," and secondary text
-      card: "#FFFFFF",                                                                 // letter card
+      card: "#FAF3DE",                                                                 // letter card
       cardEdge: "color-mix(in srgb, var(--color-motif-medium) 65%, transparent)",      // letter card border
       accountCard: "color-mix(in srgb, var(--color-motif-medium) 12%, white)",         // e-gift account card
-      button: "linear-gradient(180deg, var(--color-welcome-heading) 0%, color-mix(in srgb, var(--color-welcome-heading) 72%, var(--color-welcome-navy)) 100%)", // gift seal, selected tab, Save QR
+      button: "linear-gradient(180deg, #F8EAAE 0%, color-mix(in srgb, #F8EAAE 72%, #F1D56C) 100%)", // gift seal, selected tab, Save QR
       line: "var(--color-motif-yellow)",                                               // sage dividers
       glow: "color-mix(in srgb, var(--color-motif-medium) 30%, transparent)",          // tab track / borders
       background: "var(--color-motif-cream)",                                          // section background
@@ -1881,8 +1883,8 @@ Now, as they prepare to say yes before God and the people they love most, Cather
     showFrame: true,
     embedUrl:
     //https://open.spotify.com/embed/playlist/5sT43YjdM8pJ3xtEkrxyEY?utm_source=generator&si=e5e64aa63fd04356
-      "https://open.spotify.com/embed/playlist/3qesZSzCWmz37nL3oi8CDp?utm_source=generator&theme=0&si=fc2adaa226994a3b",
-    spotifyUrl: "https://open.spotify.com/playlist/3qesZSzCWmz37nL3oi8CDp?si=-AZ6VoraSFiN43qV5fpORA",
+      "https://open.spotify.com/embed/playlist/4wEfhtL8bxxx4MXnjmYO3J?utm_source=generator&si=716bc8e2bbfd4589",
+    spotifyUrl: "https://open.spotify.com/playlist/4wEfhtL8bxxx4MXnjmYO3J?si=r8YHLrUgRtmqdR40p4hWpQ",
   },
   // Closing "See you there!" section (components/sections/see-you-there.tsx).
   //   photos mode (loadingScreen.display "photos") → full-screen couple photo

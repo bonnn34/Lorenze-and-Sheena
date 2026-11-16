@@ -70,7 +70,7 @@ const softPanelStyle = {
 
 // Primary button: dusty rose → charcoal with white text (matches the rest of the invitation)
 const primaryButtonBg =
-  "linear-gradient(180deg, #9B6554 0%, color-mix(in srgb, #9B6554 72%, #875547) 100%)"
+  "linear-gradient(180deg, #F8EAAE 0%, color-mix(in srgb, #F8EAAE 72%, #F1D56C) 100%)"
 
 
 
@@ -745,7 +745,7 @@ function EventVenueCard({
               style={{
                 background: primaryButtonBg,
                 borderColor: "rgb(255 255 255 / 70%)",
-                color: "#FFFFFF",
+                color: "#40392F",
                 boxShadow: "0 12px 24px -10px color-mix(in srgb, var(--color-welcome-navy) 60%, transparent)",
               }}
               aria-label={`Get directions to ${badge.toLowerCase()} venue`}

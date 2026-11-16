@@ -102,11 +102,11 @@ const aboveTheBeyond = localFont({
 // White card, navy headings, body-blue text; dusty-blue buttons (no yellow for text).
 const TEAL = "var(--color-welcome-navy)"
 const BUTTON =
-  "linear-gradient(180deg, #9B6554 0%, color-mix(in srgb, #9B6554 72%, #875547) 100%)"
+  "linear-gradient(180deg, #F8EAAE 0%, color-mix(in srgb, #F8EAAE 72%, #F1D56C) 100%)"
 const BUTTON_SHADOW =
   "0 0 0 3px color-mix(in srgb, var(--color-motif-medium) 22%, transparent), 0 12px 24px -12px color-mix(in srgb, var(--color-welcome-navy) 55%, transparent)"
-const IVORY = "#FFF8F2"
-const PAPER = "#FFF8F2"
+const IVORY = "#FAF3DE"
+const PAPER = "#FAF3DE"
 const NAVY = TEAL
 const BODY = "var(--color-welcome-text)"
 const ACCENT = "var(--color-welcome-heading)"
@@ -370,7 +370,7 @@ export function WeddingPlaylist() {
                 >
                   <Disc3
                     className={`h-6 w-6 sm:h-8 sm:w-8 ${reduceMotion ? "" : "animate-[spin_6s_linear_infinite]"}`}
-                    style={{ color: IVORY }}
+                    style={{ color: "#40392F" }}
                   />
                 </span>
                 <div className="min-w-0 sm:contents">
@@ -409,7 +409,7 @@ export function WeddingPlaylist() {
                   style={{
                     background: BUTTON,
                     borderColor: "rgb(255 255 255 / 70%)",
-                    color: IVORY,
+                    color: "#40392F",
                     boxShadow: BUTTON_SHADOW,
                   }}
                 >
@@ -459,7 +459,7 @@ export function WeddingPlaylist() {
                 className={`${cinzel.className} inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-full py-3 font-semibold uppercase tracking-[0.18em] transition-all active:scale-[0.98] sm:hidden ${ct.btn}`}
                 style={{
                   background: BUTTON,
-                  color: IVORY,
+                  color: "#40392F",
                   boxShadow: BUTTON_SHADOW,
                 }}
               >

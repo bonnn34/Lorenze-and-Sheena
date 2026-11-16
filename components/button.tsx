@@ -15,7 +15,7 @@ export function Button({ children, onClick, href, variant = "primary", className
   const variants = {
     primary: "bg-primary text-primary-foreground hover:bg-primary/90",
     secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/90",
-    outline: "border-2 border-primary text-primary hover:bg-primary/5",
+    outline: "border-2 border-primary text-foreground hover:bg-primary/5",
   }
 
   if (href) {

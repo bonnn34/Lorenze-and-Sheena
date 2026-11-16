@@ -47,7 +47,7 @@ void main() {
   float spark = m.b * band * twinkle * 1.3;
 
   float k = (gold * (band * 0.9 + trail) + spark) * env;
-  vec3 col = vec3(1.0, 0.8, 0.5) * k + vec3(1.0, 0.97, 0.9) * pow(k, 2.5) * 0.85;
+  vec3 col = vec3(0.9451, 0.8353, 0.4235) * k + vec3(0.9804, 0.9529, 0.8706) * pow(k, 2.5) * 0.85;
   gl_FragColor = vec4(col, 1.0);
 }`;
 

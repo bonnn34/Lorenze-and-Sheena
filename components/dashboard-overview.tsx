@@ -144,7 +144,7 @@ export function DashboardOverview({ stats, onNavigate }: DashboardOverviewProps)
           </div>
           <p className={`${playfair.className} text-2xl font-semibold leading-none text-dash-ink`}>
             {total > 0 ? Math.round(pct(responded)) : 0}
-            <span className="text-base text-dash-accent">%</span>
+            <span className="text-base text-dash-ink">%</span>
           </p>
         </div>
         <div className="mt-3 flex h-2.5 overflow-hidden rounded-full bg-dash-tint" role="img" aria-label={`${attending} attending, ${declined} declined, ${pending} pending`}>
@@ -160,14 +160,14 @@ export function DashboardOverview({ stats, onNavigate }: DashboardOverviewProps)
 
       {/* Stats */}
       <div className="grid grid-cols-2 gap-2.5 sm:gap-4 lg:grid-cols-4">
-        <StatTile label="Invitations" value={stats.guestGroups} tone="border-dash-border bg-white text-dash-primary" icon={<Users className="h-4 w-4" />} />
+        <StatTile label="Invitations" value={stats.guestGroups} tone="border-dash-border bg-white text-dash-ink" icon={<Users className="h-4 w-4" />} />
         <StatTile label="Seats (pax)" value={stats.confirmedPax} tone="border-blue-200 bg-blue-50 text-blue-700" icon={<UserCheck className="h-4 w-4" />} />
         <StatTile label="Attending" value={attending} tone="border-green-200 bg-green-50 text-green-700" icon={<CheckCircle className="h-4 w-4" />} />
         <StatTile label="Not attending" value={declined} tone="border-red-200 bg-red-50 text-red-700" icon={<XCircle className="h-4 w-4" />} />
         <StatTile label="Pending RSVP" value={pending} tone="border-amber-200 bg-amber-50 text-amber-700" icon={<Clock className="h-4 w-4" />} />
         <StatTile label="Join requests" value={stats.joinRequests} tone="border-purple-200 bg-purple-50 text-purple-700" icon={<UserPlus className="h-4 w-4" />} />
-        <StatTile label="Entourage" value={stats.entourage ?? 0} tone="border-dash-border bg-dash-surface text-dash-primary" icon={<Crown className="h-4 w-4" />} />
-        <StatTile label="Principal sponsors" value={stats.principalSponsors ?? 0} tone="border-dash-border bg-dash-surface text-dash-primary" icon={<Heart className="h-4 w-4" />} />
+        <StatTile label="Entourage" value={stats.entourage ?? 0} tone="border-dash-border bg-dash-surface text-dash-ink" icon={<Crown className="h-4 w-4" />} />
+        <StatTile label="Principal sponsors" value={stats.principalSponsors ?? 0} tone="border-dash-border bg-dash-surface text-dash-ink" icon={<Heart className="h-4 w-4" />} />
       </div>
 
       <TableFinderQrCard />
@@ -175,7 +175,7 @@ export function DashboardOverview({ stats, onNavigate }: DashboardOverviewProps)
       {/* Guide */}
       <section aria-labelledby="dashboard-guide-title" className="space-y-3 sm:space-y-4">
         <div className="flex items-center gap-2.5">
-          <span className="flex h-8 w-8 items-center justify-center rounded-full bg-dash-tint text-dash-primary">
+          <span className="flex h-8 w-8 items-center justify-center rounded-full bg-dash-tint text-dash-ink">
             <BookOpen className="h-4 w-4" />
           </span>
           <div>
@@ -190,14 +190,14 @@ export function DashboardOverview({ stats, onNavigate }: DashboardOverviewProps)
           {GUIDE.map((item) => (
             <article key={item.tab} className="flex flex-col rounded-2xl border border-dash-border bg-white p-4 shadow-sm sm:p-5">
               <div className="flex items-start gap-3">
-                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-dash-tint text-dash-primary">{item.icon}</span>
+                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-dash-tint text-dash-ink">{item.icon}</span>
                 <h3 className={`${playfair.className} min-w-0 flex-1 self-center text-lg font-semibold leading-tight text-dash-ink`}>{item.title}</h3>
               </div>
               <p className="mt-3 text-[13px] leading-relaxed text-gray-600">{item.about}</p>
               <ul className="mt-3 flex-1 space-y-1.5">
                 {item.highlights.map((h) => (
                   <li key={h} className="flex gap-2 text-[13px] leading-snug text-dash-text">
-                    <Check className="mt-0.5 h-3.5 w-3.5 shrink-0 text-dash-accent" />
+                    <Check className="mt-0.5 h-3.5 w-3.5 shrink-0 text-dash-ink" />
                     <span>{h}</span>
                   </li>
                 ))}

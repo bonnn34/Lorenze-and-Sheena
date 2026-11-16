@@ -1,9 +1,9 @@
 /* Love story — scrapbook roadmap */
 
 .love-story-section {
-  --ls-forest: var(--color-motif-deep, #44413C);
-  --ls-cream: var(--color-motif-cream, #FFF8F2);
-  --ls-ink: var(--color-welcome-text, #44413C);
+  --ls-forest: var(--color-motif-deep, #40392F);
+  --ls-cream: var(--color-motif-cream, #FAF3DE);
+  --ls-ink: var(--color-welcome-text, #40392F);
 }
 
 .love-story-timeline__track {
@@ -80,7 +80,7 @@
   position: relative;
   aspect-ratio: 1;
   overflow: hidden;
-  background: #F1C8B8;
+  background: #F8EAAE;
 }
 
 .love-story-polaroid__caption-wrap {
@@ -119,7 +119,7 @@
 }
 
 .love-story-pin--white {
-  background: radial-gradient(circle at 35% 28%, #fff, #C5BDB5);
+  background: radial-gradient(circle at 35% 28%, #fff, #FAF3DE);
 }
 
 .love-story-tape {
@@ -130,8 +130,8 @@
   width: 3.75rem;
   height: 1.15rem;
   transform: translateX(-50%) rotate(-5deg);
-  background: color-mix(in srgb, #D9A08C 78%, transparent);
-  border: 1px solid color-mix(in srgb, #B97865 30%, transparent);
+  background: color-mix(in srgb, #FAF3DE 78%, transparent);
+  border: 1px solid color-mix(in srgb, #F1D56C 30%, transparent);
   opacity: 0.9;
 }
 

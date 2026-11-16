@@ -74,7 +74,7 @@ function MessageCard({ msg }: { msg: Message }) {
     <article className="group relative flex flex-col rounded-2xl border border-dash-border bg-white p-4 shadow-sm transition-shadow hover:shadow-md sm:p-5">
       <header className="flex items-start gap-3">
         <span
-          className={`${cinzel.className} flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-dash-primary text-sm font-semibold text-white shadow-sm`}
+          className={`${cinzel.className} flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-dash-primary text-sm font-semibold text-dash-ink shadow-sm`}
           aria-hidden
         >
           {initials(name)}
@@ -92,8 +92,8 @@ function MessageCard({ msg }: { msg: Message }) {
           aria-label={copied ? "Copied" : `Copy message from ${name}`}
           className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full border transition-colors ${
             copied
-              ? "border-dash-accent bg-dash-accent text-white"
-              : "border-dash-border bg-white text-gray-400 hover:text-dash-primary sm:opacity-0 sm:group-hover:opacity-100 sm:focus:opacity-100"
+              ? "border-dash-accent bg-dash-accent text-dash-ink"
+              : "border-dash-border bg-white text-gray-400 hover:text-dash-ink sm:opacity-0 sm:group-hover:opacity-100 sm:focus:opacity-100"
           }`}
         >
           {copied ? <Check className="h-3.5 w-3.5" /> : <Copy className="h-3.5 w-3.5" />}
@@ -114,7 +114,7 @@ function MessageCard({ msg }: { msg: Message }) {
             type="button"
             onClick={() => setExpanded((v) => !v)}
             aria-expanded={expanded}
-            className="mt-2 pl-6 text-xs font-semibold text-dash-primary underline-offset-4 hover:underline"
+            className="mt-2 pl-6 text-xs font-semibold text-dash-ink underline-offset-4 hover:underline"
           >
             {expanded ? "Show less" : "Read more"}
           </button>
@@ -174,7 +174,7 @@ export function GuestMessages({ messages, onRefresh, isLoading = false }: GuestM
           type="button"
           onClick={() => void handleRefresh()}
           disabled={busy}
-          className="inline-flex items-center gap-1.5 rounded-full border border-dash-border bg-white px-3 py-1.5 text-xs font-medium text-dash-primary transition-colors hover:bg-dash-surface disabled:opacity-50"
+          className="inline-flex items-center gap-1.5 rounded-full border border-dash-border bg-white px-3 py-1.5 text-xs font-medium text-dash-ink transition-colors hover:bg-dash-surface disabled:opacity-50"
         >
           <RefreshCw className={`h-3.5 w-3.5 ${busy ? "animate-spin" : ""}`} />
           Refresh
@@ -190,7 +190,7 @@ export function GuestMessages({ messages, onRefresh, isLoading = false }: GuestM
       {/* Stats */}
       <div className="grid grid-cols-2 gap-2.5 sm:gap-4 lg:grid-cols-4">
         {[
-          { label: "Messages", value: stats.total, tone: "border-dash-border bg-white text-dash-primary" },
+          { label: "Messages", value: stats.total, tone: "border-dash-border bg-white text-dash-ink" },
           { label: "From guests", value: stats.guests, tone: "border-green-200 bg-green-50 text-green-700" },
           { label: "This week", value: stats.thisWeek, tone: "border-amber-200 bg-amber-50 text-amber-700" },
           { label: "Heartfelt (100+ chars)", value: stats.long, tone: "border-purple-200 bg-purple-50 text-purple-700" },
@@ -204,7 +204,7 @@ export function GuestMessages({ messages, onRefresh, isLoading = false }: GuestM
 
       {/* Explainer */}
       <div className="flex gap-3 rounded-xl border border-dash-border bg-dash-surface p-3 sm:p-4">
-        <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white text-dash-primary shadow-sm ring-1 ring-dash-border">
+        <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white text-dash-ink shadow-sm ring-1 ring-dash-border">
           <Heart className="h-4 w-4" />
         </span>
         <p className="text-xs leading-relaxed text-dash-text sm:text-sm">
@@ -230,7 +230,7 @@ export function GuestMessages({ messages, onRefresh, isLoading = false }: GuestM
           className="inline-flex shrink-0 items-center gap-1.5 rounded-lg border border-dash-border bg-white px-3 text-xs font-medium text-dash-ink transition-colors hover:bg-dash-surface sm:text-sm"
           aria-label={`Sort: ${newestFirst ? "newest first" : "oldest first"}`}
         >
-          <ArrowDownUp className="h-4 w-4 text-dash-accent" />
+          <ArrowDownUp className="h-4 w-4 text-dash-ink" />
           {newestFirst ? "Newest" : "Oldest"}
         </button>
       </div>

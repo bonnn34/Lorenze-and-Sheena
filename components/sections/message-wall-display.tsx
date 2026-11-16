@@ -15,11 +15,11 @@ import { useSiteConfig } from "@/hooks/use-site-config"
 // Cards are white paper with navy text; buttons are dusty blue with white text.
 const TEAL = "var(--color-welcome-navy)"
 const BLUE = "var(--color-welcome-heading)"
-const BUTTON = "linear-gradient(180deg, #9B6554 0%, color-mix(in srgb, #9B6554 72%, #875547) 100%)"
+const BUTTON = "linear-gradient(180deg, #F8EAAE 0%, color-mix(in srgb, #F8EAAE 72%, #F1D56C) 100%)"
 const BUTTON_EDGE = "rgb(255 255 255 / 70%)"
 const SUN = "var(--color-motif-accent)"
-const PAPER = "#FFF8F2"
-const IVORY = "#FFF8F2"
+const PAPER = "#FAF3DE"
+const IVORY = "#FAF3DE"
 const NAVY = TEAL
 const BODY = "var(--color-welcome-text)"
 const ACCENT = BLUE
@@ -209,7 +209,7 @@ function MessageCard({
               boxShadow: `0 0 0 2px ${IVORY}, 0 0 0 3px color-mix(in srgb, var(--color-motif-medium) 70%, transparent), 0 6px 14px -6px color-mix(in srgb, var(--color-welcome-navy) 55%, transparent)`,
             }}
           >
-            <span className={`${cinzel.className} ${sectionType.label} font-semibold`} style={{ color: IVORY }}>
+            <span className={`${cinzel.className} ${sectionType.label} font-semibold`} style={{ color: "#40392F" }}>
               {initials(msg.name)}
             </span>
           </div>
@@ -264,26 +264,26 @@ function MessageCard({
                 onClick={() => onOpen(msg)}
                 aria-label={`Read the full message from ${msg.name}`}
                 className={`${cinzel.className} group/read relative inline-flex h-full items-center gap-1.5 overflow-hidden rounded-full border pl-1 pr-3 text-[0.58rem] font-semibold uppercase leading-none tracking-[0.14em] transition-all duration-300 hover:-translate-y-px hover:shadow-[0_8px_18px_-8px_color-mix(in_srgb,var(--color-welcome-navy)_55%,transparent)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[color-mix(in_srgb,var(--color-motif-accent)_45%,transparent)] active:translate-y-0 sm:pr-3.5 sm:text-[0.62rem]`}
-                style={{ color: IVORY, background: BUTTON, borderColor: BUTTON_EDGE }}
+                style={{ color: "#40392F", background: BUTTON, borderColor: BUTTON_EDGE }}
               >
                 {/* Fill sweeps in on hover */}
                 <span
                   aria-hidden
                   className="absolute inset-0 origin-left scale-x-0 rounded-full transition-transform duration-500 ease-out group-hover/read:scale-x-100"
-                  style={{ background: "var(--color-welcome-navy)" }}
+                  style={{ background: "#F1D56C" }}
                 />
                 <span
                   aria-hidden
                   className="relative flex h-5 w-5 items-center justify-center rounded-full sm:h-6 sm:w-6"
                   style={{ background: "rgb(255 255 255 / 22%)" }}
                 >
-                  <BookOpen className="h-2.5 w-2.5 sm:h-3 sm:w-3" style={{ color: IVORY }} />
+                  <BookOpen className="h-2.5 w-2.5 sm:h-3 sm:w-3" style={{ color: "#40392F" }} />
                 </span>
                 <span className="relative">Read full message</span>
                 <ArrowRight
                   aria-hidden
                   className="relative h-3 w-3 transition-transform duration-300 group-hover/read:translate-x-0.5"
-                  style={{ color: IVORY }}
+                  style={{ color: "#40392F" }}
                 />
               </button>
             )}
@@ -398,7 +398,7 @@ export default function MessageWallDisplay({ messages, loading, freshKey = null 
           <span
             className={`${cinzel.className} ${sectionType.label} rounded-full border px-4 py-2 font-semibold uppercase tracking-[0.16em]`}
             style={{
-              color: IVORY,
+              color: "#40392F",
               background: BUTTON,
               borderColor: BUTTON_EDGE,
             }}
@@ -494,7 +494,7 @@ export default function MessageWallDisplay({ messages, loading, freshKey = null 
                 style={{
                   background: BUTTON,
                   borderColor: BUTTON_EDGE,
-                  color: IVORY,
+                  color: "#40392F",
                   boxShadow: "0 6px 14px -6px color-mix(in srgb, var(--color-welcome-navy) 45%, transparent)",
                 }}
               >

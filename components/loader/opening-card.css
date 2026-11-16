@@ -12,8 +12,8 @@
 .opening-card {
   /* Geometry measured from the artwork (kurdele-fiyonk.webp is 826×1157) */
   --oc-band-y: 47.5%;                         /* ribbon centre line on the card */
-  --oc-bow-w: min(68cqw, 31cqh);              /* bow width relative to the card */
-  --oc-band-h: calc(var(--oc-bow-w) * 0.21);
+  --oc-bow-w: min(48cqw, 27cqh);              /* bow width relative to the card */
+  --oc-band-h: calc(var(--oc-bow-w) * 0.14);
   --oc-knot-y: calc(var(--oc-bow-w) * 0.272); /* knot centre, measured from the bow's top edge */
   --oc-thick: 5px;                            /* door board thickness */
   --oc-door-start: 1.75s;
@@ -37,7 +37,7 @@
   content: '';
   position: absolute;
   inset: 0;
-  background: #efd6cc var(--oc-paper) repeat;
+  background: #FAF3DE var(--oc-paper) repeat;
   background-size: 152px;
 }
 
@@ -66,7 +66,7 @@
   touch-action: manipulation;
 }
 .opening-card__stage:focus-visible .opening-card__hint {
-  box-shadow: 0 0 0 2px #fff, 0 0 0 4px #c98a7a;
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px #F1D56C;
 }
 
 /* Everything that moves in 3D lives in here; it also eases in toward the opening */
@@ -91,9 +91,9 @@
   opacity: 0;
   pointer-events: none;
   background:
-    radial-gradient(ellipse 14% 40% at 50% 50%, rgba(255, 255, 255, 0.85), rgba(255, 250, 240, 0) 100%),
-    radial-gradient(ellipse 30% 55% at 50% 50%, rgba(255, 244, 226, 0.95), rgba(255, 244, 226, 0) 100%),
-    radial-gradient(ellipse 65% 75% at 50% 50%, rgba(255, 226, 205, 0.7), rgba(255, 226, 205, 0) 100%);
+    radial-gradient(ellipse 14% 40% at 50% 50%, rgba(255, 255, 255, 0.85), rgba(250, 243, 222, 0) 100%),
+    radial-gradient(ellipse 30% 55% at 50% 50%, rgba(241, 213, 108, 0.95), rgba(241, 213, 108, 0) 100%),
+    radial-gradient(ellipse 65% 75% at 50% 50%, rgba(241, 213, 108, 0.7), rgba(241, 213, 108, 0) 100%);
   transform: scale(0.35, 0.8);
 }
 .is-opening .opening-card__light {
@@ -118,10 +118,10 @@
   mix-blend-mode: screen;
   background: repeating-conic-gradient(
     from 0deg,
-    rgba(255, 246, 228, 0.55) 0deg 2.5deg,
-    rgba(255, 246, 228, 0) 6deg 13deg,
-    rgba(255, 236, 205, 0.35) 15deg 16.5deg,
-    rgba(255, 246, 228, 0) 19deg 24deg
+    rgba(250, 243, 222, 0.55) 0deg 2.5deg,
+    rgba(250, 243, 222, 0) 6deg 13deg,
+    rgba(241, 213, 108, 0.35) 15deg 16.5deg,
+    rgba(250, 243, 222, 0) 19deg 24deg
   );
   -webkit-mask-image: radial-gradient(circle closest-side, #000 4%, rgba(0, 0, 0, 0.5) 30%, transparent 70%);
   mask-image: radial-gradient(circle closest-side, #000 4%, rgba(0, 0, 0, 0.5) 30%, transparent 70%);
@@ -152,10 +152,10 @@
   pointer-events: none;
   mix-blend-mode: screen;
   background:
-    radial-gradient(circle, #ffffff 0%, rgba(255, 250, 238, 0.9) 4%, rgba(255, 236, 210, 0.35) 14%, rgba(255, 226, 200, 0) 38%),
+    radial-gradient(circle, #ffffff 0%, rgba(250, 243, 222, 0.9) 4%, rgba(241, 213, 108, 0.35) 14%, rgba(241, 213, 108, 0) 38%),
     /* four-point star streaks */
-    linear-gradient(to right, rgba(255, 248, 235, 0) 0%, rgba(255, 248, 235, 0.85) 50%, rgba(255, 248, 235, 0) 100%) center / 100% 1.5% no-repeat,
-    linear-gradient(to bottom, rgba(255, 248, 235, 0) 0%, rgba(255, 248, 235, 0.85) 50%, rgba(255, 248, 235, 0) 100%) center / 1.5% 100% no-repeat;
+    linear-gradient(to right, rgba(250, 243, 222, 0) 0%, rgba(250, 243, 222, 0.85) 50%, rgba(250, 243, 222, 0) 100%) center / 100% 1.5% no-repeat,
+    linear-gradient(to bottom, rgba(250, 243, 222, 0) 0%, rgba(250, 243, 222, 0.85) 50%, rgba(250, 243, 222, 0) 100%) center / 1.5% 100% no-repeat;
   will-change: transform, opacity;
 }
 .is-opening .opening-card__flare {
@@ -181,13 +181,13 @@
   transform: scaleY(0);
   background: linear-gradient(
     to bottom,
-    rgba(255, 252, 245, 0) 0%,
-    rgba(255, 252, 245, 0.9) 18%,
+    rgba(250, 243, 222, 0) 0%,
+    rgba(250, 243, 222, 0.9) 18%,
     #ffffff 50%,
-    rgba(255, 252, 245, 0.9) 82%,
-    rgba(255, 252, 245, 0) 100%
+    rgba(250, 243, 222, 0.9) 82%,
+    rgba(250, 243, 222, 0) 100%
   );
-  box-shadow: 0 0 6px 2px rgba(255, 246, 230, 0.9), 0 0 22px 8px rgba(255, 232, 205, 0.55);
+  box-shadow: 0 0 6px 2px rgba(250, 243, 222, 0.9), 0 0 22px 8px rgba(241, 213, 108, 0.55);
   will-change: transform, opacity;
 }
 /* Wider halo leaking out of the crack */
@@ -199,7 +199,7 @@
   left: 50%;
   width: 34cqw;
   margin-left: -17cqw;
-  background: radial-gradient(ellipse 50% 50% at 50% 50%, rgba(255, 240, 222, 0.6), rgba(255, 240, 222, 0) 70%);
+  background: radial-gradient(ellipse 50% 50% at 50% 50%, rgba(241, 213, 108, 0.6), rgba(241, 213, 108, 0) 70%);
   mix-blend-mode: screen;
 }
 .is-opening .opening-card__seam {
@@ -222,10 +222,10 @@
   mix-blend-mode: screen;
 }
 .opening-card__door--left .opening-card__door-rim {
-  background: linear-gradient(to left, rgba(255, 244, 228, 0.85), rgba(255, 232, 210, 0.3) 18%, rgba(255, 232, 210, 0) 45%);
+  background: linear-gradient(to left, rgba(241, 213, 108, 0.85), rgba(241, 213, 108, 0.3) 18%, rgba(241, 213, 108, 0) 45%);
 }
 .opening-card__door--right .opening-card__door-rim {
-  background: linear-gradient(to right, rgba(255, 244, 228, 0.85), rgba(255, 232, 210, 0.3) 18%, rgba(255, 232, 210, 0) 45%);
+  background: linear-gradient(to right, rgba(241, 213, 108, 0.85), rgba(241, 213, 108, 0.3) 18%, rgba(241, 213, 108, 0) 45%);
 }
 .is-opening .opening-card__door-rim {
   animation: oc-rim 1.9s linear calc(var(--oc-magic-start) + 0.35s) forwards;
@@ -252,8 +252,8 @@
   margin: calc(var(--s) / -2) 0 0 calc(var(--s) / -2);
   border-radius: 50%;
   opacity: 0;
-  background: radial-gradient(circle, #fffdf8 0%, rgba(255, 240, 205, 0.9) 35%, rgba(255, 220, 170, 0) 70%);
-  box-shadow: 0 0 6px 1px rgba(255, 236, 200, 0.7);
+  background: radial-gradient(circle, #fffdf8 0%, rgba(241, 213, 108, 0.9) 35%, rgba(241, 213, 108, 0) 70%);
+  box-shadow: 0 0 6px 1px rgba(241, 213, 108, 0.7);
   will-change: transform, opacity;
 }
 .is-opening .opening-card__mote {
@@ -316,11 +316,11 @@
 }
 .opening-card__door--left .opening-card__door-face::after {
   right: 0;
-  background: linear-gradient(to left, rgba(90, 45, 35, 0.28), rgba(255, 240, 230, 0.25) 60%, transparent);
+  background: linear-gradient(to left, rgba(64, 57, 47, 0.28), rgba(241, 213, 108, 0.25) 60%, transparent);
 }
 .opening-card__door--right .opening-card__door-face::after {
   left: 0;
-  background: linear-gradient(to right, rgba(90, 45, 35, 0.28), rgba(255, 240, 230, 0.25) 60%, transparent);
+  background: linear-gradient(to right, rgba(64, 57, 47, 0.28), rgba(241, 213, 108, 0.25) 60%, transparent);
 }
 
 /* Face darkens as it turns away from the light (darkest towards the free edge) */
@@ -331,10 +331,10 @@
   pointer-events: none;
 }
 .opening-card__door--left .opening-card__door-shade {
-  background: linear-gradient(to right, rgba(60, 28, 24, 0.15), rgba(60, 28, 24, 0.6));
+  background: linear-gradient(to right, rgba(64, 57, 47, 0.15), rgba(64, 57, 47, 0.6));
 }
 .opening-card__door--right .opening-card__door-shade {
-  background: linear-gradient(to left, rgba(60, 28, 24, 0.15), rgba(60, 28, 24, 0.6));
+  background: linear-gradient(to left, rgba(64, 57, 47, 0.15), rgba(64, 57, 47, 0.6));
 }
 
 /* A soft gloss band that slides across the face as the angle changes */
@@ -347,9 +347,9 @@
   pointer-events: none;
   background: linear-gradient(
     to right,
-    rgba(255, 248, 238, 0) 0%,
-    rgba(255, 248, 238, 0.42) 50%,
-    rgba(255, 248, 238, 0) 100%
+    rgba(250, 243, 222, 0) 0%,
+    rgba(250, 243, 222, 0.42) 50%,
+    rgba(250, 243, 222, 0) 100%
   );
   mix-blend-mode: soft-light;
 }
@@ -359,7 +359,7 @@
 /* Inside of the doors: cream paper, shaded towards the hinge */
 .opening-card__door-back {
   transform: translateZ(calc(var(--oc-thick) * -1)) rotateY(180deg);
-  background: #f6e6dc var(--oc-paper) repeat;
+  background: #FAF3DE var(--oc-paper) repeat;
   background-size: 152px;
 }
 .opening-card__door-back::after {
@@ -368,10 +368,10 @@
   inset: 0;
 }
 .opening-card__door--left .opening-card__door-back::after {
-  background: linear-gradient(to left, rgba(80, 40, 30, 0.35), rgba(80, 40, 30, 0.05) 60%);
+  background: linear-gradient(to left, rgba(64, 57, 47, 0.35), rgba(64, 57, 47, 0.05) 60%);
 }
 .opening-card__door--right .opening-card__door-back::after {
-  background: linear-gradient(to right, rgba(80, 40, 30, 0.35), rgba(80, 40, 30, 0.05) 60%);
+  background: linear-gradient(to right, rgba(64, 57, 47, 0.35), rgba(64, 57, 47, 0.05) 60%);
 }
 
 /* Board thickness along the free edge — visible while the door turns */
@@ -380,7 +380,7 @@
   top: 0;
   bottom: 0;
   width: var(--oc-thick);
-  background: linear-gradient(to bottom, #e9c9a4, #d9ac83 50%, #e9c9a4);
+  background: linear-gradient(to bottom, #F8EAAE, #F1D56C 50%, #F8EAAE);
 }
 .opening-card__door--left .opening-card__door-edge {
   right: 0;
@@ -480,11 +480,11 @@
   top: 100%;
   background: linear-gradient(
     to top,
-    rgba(255, 214, 140, 0) 0%,
-    rgba(255, 214, 140, 0.5) 40%,
-    rgba(255, 236, 190, 0.75) 50%,
-    rgba(255, 214, 140, 0.5) 60%,
-    rgba(255, 214, 140, 0) 100%
+    rgba(241, 213, 108, 0) 0%,
+    rgba(241, 213, 108, 0.5) 40%,
+    rgba(241, 213, 108, 0.75) 50%,
+    rgba(241, 213, 108, 0.5) 60%,
+    rgba(241, 213, 108, 0) 100%
   );
   will-change: transform;
 }
@@ -519,7 +519,7 @@
   top: 0;
   height: 100%;
   width: 51%;
-  filter: drop-shadow(0 2px 3px rgba(100, 50, 40, 0.3));
+  filter: drop-shadow(0 2px 3px rgba(64, 57, 47, 0.3));
   will-change: transform, opacity;
 }
 .opening-card__ribbon-end img {
@@ -580,7 +580,7 @@
   display: block;
   width: 100%;
   height: 100%;
-  filter: drop-shadow(0 6px 8px rgba(100, 50, 40, 0.32));
+  filter: drop-shadow(0 6px 8px rgba(64, 57, 47, 0.32));
 }
 
 /* Close-up knot (muhur.webp), lined up knot-on-knot and feathered into the bow around it.
@@ -612,7 +612,7 @@
   margin-left: -23%;
   transform: translateY(-50%) scale(0.8);
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(255, 244, 228, 0.55) 0%, rgba(255, 226, 200, 0.25) 40%, rgba(255, 226, 200, 0) 70%);
+  background: radial-gradient(circle, rgba(241, 213, 108, 0.55) 0%, rgba(241, 213, 108, 0.25) 40%, rgba(241, 213, 108, 0) 70%);
   mix-blend-mode: screen;
   opacity: 0;
   animation: oc-knot-glow 2.8s ease-in-out infinite;
@@ -683,10 +683,10 @@
   margin: 0;
   padding: 7px 22px;
   border-radius: 999px;
-  background: rgba(253, 244, 238, 0.92);
-  border: 1px solid rgba(196, 150, 100, 0.45);
-  box-shadow: 0 2px 8px rgba(100, 50, 40, 0.15);
-  color: #6f4a3e;
+  background: rgba(250, 243, 222, 0.92);
+  border: 1px solid rgba(64, 57, 47, 0.45);
+  box-shadow: 0 2px 8px rgba(64, 57, 47, 0.15);
+  color: #40392F;
   font-size: 11px;
   font-weight: 500;
   letter-spacing: 0.2em;
@@ -726,7 +726,7 @@
    (its <img>s are lazy, so hidden ones are never fetched). */
 @media not all and (max-width: 767px) {
   .opening-card--mobile-only::before {
-    background: #eef2f6;
+    background: #FAF3DE;
   }
   .opening-card--mobile-only .opening-card__stage {
     display: none;

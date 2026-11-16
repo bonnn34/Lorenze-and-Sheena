@@ -36,7 +36,7 @@ const CORNER_DECO_CLASS =
 
 // Light palette — the section has no background and sits on the bright peach Silk backdrop.
 // Everything is white (titles, times, descriptions, bullets) with a navy halo so it reads on peach.
-const IVORY = "#FFF8F2"
+const IVORY = "#FAF3DE"
 const CREAM = "#FFFFFF"
 const PALE = "#FFFFFF"
 const LINE = "rgb(255 255 255 / 92%)"

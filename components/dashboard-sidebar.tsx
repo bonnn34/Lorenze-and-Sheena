@@ -149,7 +149,7 @@ export function DashboardSidebar({
 
         {/* Names */}
         <h2 className={`${playfair.className} relative mt-1.5 truncate px-6 text-[1.3rem] font-semibold leading-tight text-dash-ink lg:px-0`}>
-          {groom} <span className="font-medium italic text-dash-accent">&amp;</span> {bride}
+          {groom} <span className="font-medium italic text-dash-ink">&amp;</span> {bride}
         </h2>
 
         {/* Divider */}
@@ -161,7 +161,7 @@ export function DashboardSidebar({
 
         {/* Date */}
         {weddingDate ? (
-          <p className={`${cinzel.className} relative mt-2 text-[10px] font-semibold uppercase tracking-[0.16em] text-dash-primary`}>
+          <p className={`${cinzel.className} relative mt-2 text-[10px] font-semibold uppercase tracking-[0.16em] text-dash-ink`}>
             {weddingDay ? `${weddingDay.slice(0, 3)} · ` : ""}
             {weddingDate}
             {weddingTime ? ` · ${weddingTime}` : ""}
@@ -170,7 +170,7 @@ export function DashboardSidebar({
 
         {/* Countdown (compact) */}
         {daysLeft !== null ? (
-          <div className="relative mt-3 inline-flex items-center gap-2 rounded-full bg-dash-primary py-1.5 pl-1.5 pr-3.5 text-white shadow-[0_8px_18px_-12px_color-mix(in_srgb,var(--color-dash-ink)_80%,transparent)]">
+          <div className="relative mt-3 inline-flex items-center gap-2 rounded-full bg-dash-primary py-1.5 pl-1.5 pr-3.5 text-dash-ink shadow-[0_8px_18px_-12px_color-mix(in_srgb,var(--color-dash-ink)_80%,transparent)]">
             {daysLeft > 0 ? (
               <>
                 <span className={`${playfair.className} flex h-7 min-w-7 items-center justify-center rounded-full bg-white/15 px-1.5 text-sm font-semibold tabular-nums`}>
@@ -220,8 +220,8 @@ export function DashboardSidebar({
                         className={cn(
                           "flex h-8 w-8 shrink-0 items-center justify-center rounded-lg transition-colors",
                           isActive
-                            ? "bg-white text-dash-primary shadow-sm ring-1 ring-dash-border"
-                            : "bg-dash-surface text-dash-faint group-hover:bg-white group-hover:text-dash-accent"
+                            ? "bg-white text-dash-ink shadow-sm ring-1 ring-dash-border"
+                            : "bg-dash-surface text-dash-faint group-hover:bg-white group-hover:text-dash-ink"
                         )}
                       >
                         <Icon className="h-4 w-4" />
@@ -231,7 +231,7 @@ export function DashboardSidebar({
                         <span
                           className={cn(
                             "min-w-[22px] rounded-full px-1.5 py-0.5 text-center text-[11px] font-semibold",
-                            item.id === "requests" ? "bg-dash-accent text-white" : "bg-dash-badge-bg text-dash-badge-text"
+                            item.id === "requests" ? "bg-dash-accent text-dash-ink" : "bg-dash-badge-bg text-dash-badge-text"
                           )}
                         >
                           {item.badge > 99 ? "99+" : item.badge}
@@ -263,9 +263,9 @@ export function DashboardSidebar({
           rel="noopener noreferrer"
           className="flex w-full items-center gap-2.5 rounded-xl border border-dash-border bg-dash-surface px-3 py-2.5 text-[13px] font-semibold text-dash-ink transition-colors hover:bg-dash-tint"
         >
-          <Sheet className="h-4 w-4 text-dash-primary" />
+          <Sheet className="h-4 w-4 text-dash-ink" />
           <span>Open Spreadsheet</span>
-          <ExternalLink className="ml-auto h-3 w-3 text-dash-accent" />
+          <ExternalLink className="ml-auto h-3 w-3 text-dash-ink" />
         </a>
       </div>
     </>

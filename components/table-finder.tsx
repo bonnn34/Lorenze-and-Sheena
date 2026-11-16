@@ -36,15 +36,15 @@ const aboveTheBeyond = localFont({
 // Motif colors (app/globals.css) — no yellow for text (hard to read):
 // navy titles, dusty-blue labels, body-blue text, deep sage green for your name,
 // dusty-blue buttons; sunshine only as a tiny ornament.
-const IVORY = "#FFF8F2"
+const IVORY = "#FAF3DE"
 const GOLD = "var(--color-welcome-heading)" // accent labels & icons (dusty blue)
 const NAVY = "var(--color-welcome-navy)"
 const SCRIPT = "var(--color-welcome-heading)"
 const BODY = "var(--color-welcome-text)"
-const LEAF = "color-mix(in srgb, var(--color-motif-yellow) 70%, #44413C)" // deep sage green
+const LEAF = "color-mix(in srgb, var(--color-motif-yellow) 70%, #40392F)" // deep sage green
 const SUN = "var(--color-motif-accent)"
 const NAV_GOLD =
-  "linear-gradient(180deg, #9B6554 0%, color-mix(in srgb, #9B6554 72%, #875547) 100%)"
+  "linear-gradient(180deg, #F8EAAE 0%, color-mix(in srgb, #F8EAAE 72%, #F1D56C) 100%)"
 const GOLD_BORDER = "color-mix(in srgb, var(--color-motif-medium) 65%, transparent)"
 const GOLD_BORDER_SOFT = "color-mix(in srgb, var(--color-motif-medium) 35%, transparent)"
 const CHAMPAGNE = "var(--color-motif-medium)" // sky — used for soft highlight tints
@@ -79,7 +79,7 @@ const innerSurfaceStyle = {
 const primaryButtonStyle = {
   background: NAV_GOLD,
   borderColor: "rgb(255 255 255 / 70%)",
-  color: IVORY,
+  color: "#40392F",
   boxShadow:
     "0 0 0 3px color-mix(in srgb, var(--color-motif-medium) 22%, transparent), 0 10px 22px -10px color-mix(in srgb, var(--color-welcome-navy) 55%, transparent)",
 } as const
@@ -640,7 +640,7 @@ export function TableFinder() {
                       className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full sm:h-9 sm:w-9"
                       style={{ background: NAV_GOLD }}
                     >
-                      <User className="h-3.5 w-3.5 sm:h-4 sm:w-4" style={{ color: IVORY }} />
+                      <User className="h-3.5 w-3.5 sm:h-4 sm:w-4" style={{ color: "#40392F" }} />
                     </div>
                     <div className="min-w-0 flex-1">
                       <div
@@ -872,7 +872,7 @@ export function TableFinder() {
                         className={`${cinzel.className} flex h-11 w-11 shrink-0 items-center justify-center rounded-full text-lg font-bold sm:h-12 sm:w-12 sm:text-xl`}
                         style={{
                           background: NAV_GOLD,
-                          color: IVORY,
+                          color: "#40392F",
                           fontWeight: 700,
                         }}
                       >
@@ -962,7 +962,7 @@ export function TableFinder() {
                   className="mx-auto my-2.5 flex h-9 w-9 items-center justify-center rounded-full sm:my-3 sm:h-10 sm:w-10"
                   style={{ background: NAV_GOLD }}
                 >
-                  <item.icon className="h-4 w-4" style={{ color: IVORY }} />
+                  <item.icon className="h-4 w-4" style={{ color: "#40392F" }} />
                 </div>
                 <h3
                   className={`${theSeasons.className} text-[0.9rem] tracking-[0.06em] sm:text-xl sm:tracking-[0.08em]`}

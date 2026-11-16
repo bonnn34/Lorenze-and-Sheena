@@ -449,9 +449,9 @@ export default function DashboardPage() {
                 <Lock className="h-8 w-8 text-white" />
               </div>
               <div className="mb-2">
-                <span className="font-serif text-sm text-dash-accent">♥</span>
+                <span className="font-serif text-sm text-dash-ink">♥</span>
                 <span className="font-serif text-2xl font-bold text-dash-ink mx-2">Wedding Invitation</span>
-                <span className="font-serif text-sm text-dash-accent">♥</span>
+                <span className="font-serif text-sm text-dash-ink">♥</span>
               </div>
               <h1 className="text-2xl font-bold text-dash-ink mb-2">
                 Admin Dashboard
@@ -485,7 +485,7 @@ export default function DashboardPage() {
 
               <Button
                 type="submit"
-                className="w-full bg-dash-primary hover:bg-dash-primary-hover text-white py-6 rounded-lg font-medium transition-all shadow-md hover:shadow-lg"
+                className="w-full bg-dash-primary hover:bg-dash-primary-hover text-dash-ink py-6 rounded-lg font-medium transition-all shadow-md hover:shadow-lg"
               >
                 Access Dashboard
               </Button>
@@ -527,7 +527,7 @@ export default function DashboardPage() {
                 Welcome back
               </p>
               <h1 className={`${playfair.className} truncate text-[1.05rem] font-semibold leading-tight text-dash-ink sm:text-xl`}>
-                {siteConfig.couple.groomNickname} <span className="italic text-dash-accent">&amp;</span> {siteConfig.couple.brideNickname}
+                {siteConfig.couple.groomNickname} <span className="italic text-dash-ink">&amp;</span> {siteConfig.couple.brideNickname}
               </h1>
             </div>
             <div className="flex shrink-0 items-center gap-2 sm:gap-3">

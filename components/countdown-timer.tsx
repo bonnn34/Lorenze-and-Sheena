@@ -39,7 +39,7 @@ function Unit({ value, label }: { value: number; label: string }) {
       </div>
       <span
         className="text-[9px] uppercase tracking-widest"
-        style={{ color: "var(--color-motif-medium)" }}
+        style={{ color: "var(--color-welcome-text)" }}
       >
         {label}
       </span>

@@ -10,19 +10,19 @@ import { cormorantRegular as cormorant } from "@/lib/self-hosted-fonts"
 
 
 // Guest information color palette
-const GUEST_LIGHT = "#D9A08C"   // blush peach
-const GUEST_MEDIUM = "#44413C"   // slate navy
-const GUEST_DARK = "#44413C"    // midnight navy
-const GUEST_BG = "#FFF8F2"      // warm white container background
+const GUEST_LIGHT = "#FAF3DE"   // blush peach
+const GUEST_MEDIUM = "#40392F"   // slate navy
+const GUEST_DARK = "#40392F"    // midnight navy
+const GUEST_BG = "#FAF3DE"      // warm white container background
 
 // Guest attire motif palette (swatches shown in Wedding Attire)
 const GUEST_ATTIRE_PALETTE = [
-  "#44413C",
-  "#44413C",
-  "#B97865",
-  "#D9A08C",
+  "#40392F",
+  "#40392F",
+  "#F1D56C",
+  "#FAF3DE",
   "#FFFFFF",
-  "#FFF8F2",
+  "#FAF3DE",
 ]
 
 export function GuestInformation() {
@@ -240,7 +240,7 @@ export function GuestInformation() {
 
               <div className="rounded-lg sm:rounded-xl p-2.5 sm:p-3 border-2 min-w-0" style={{ borderColor: `${GUEST_LIGHT}99`, backgroundColor: GUEST_BG }}>
                 <p className={`${cormorant.className} text-xs sm:text-sm md:text-base font-semibold mb-1.5 sm:mb-2 flex items-center gap-2`} style={{ color: GUEST_DARK }}>
-                  <span className="inline-flex items-center justify-center w-5 h-5 sm:w-6 sm:h-6 rounded-full flex-shrink-0" style={{ backgroundColor: "rgba(68, 65, 60, 0.12)", color: GUEST_DARK }}>
+                  <span className="inline-flex items-center justify-center w-5 h-5 sm:w-6 sm:h-6 rounded-full flex-shrink-0" style={{ backgroundColor: "rgba(64, 57, 47, 0.12)", color: GUEST_DARK }}>
                     <MapPin className="w-3 h-3 sm:w-3.5 sm:h-3.5" />
                   </span>
                   Quick Tips

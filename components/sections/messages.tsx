@@ -28,8 +28,8 @@ const aboveTheBeyond = localFont({
 
 // Palette lives in globals.css → motif / welcome tokens.
 // Form card: white paper with navy text; dusty-blue labels and button.
-const PAPER = "#FFF8F2"
-const IVORY = "#FFF8F2"
+const PAPER = "#FAF3DE"
+const IVORY = "#FAF3DE"
 const NAVY = "var(--color-welcome-navy)"
 const BODY = "var(--color-welcome-text)"
 const ACCENT = "var(--color-welcome-heading)"
@@ -43,13 +43,13 @@ const palette = {
 
 const lightLineStyle = {
   background: "linear-gradient(to right, transparent, rgb(255 255 255 / 85%), transparent)",
-  boxShadow: "0 1px 3px rgb(36 22 18 / 35%)",
+  boxShadow: "0 1px 3px rgb(64 57 47 / 35%)",
 } as const
 
 // Text outside the cards sits straight on the dark brown / peach silk: white lettering with a
 // deep-brown halo so it reads on both the light and the dark folds
-const OUTSIDE_TEXT = "#FFFFFF"
-const HALO = "36 22 18" // deep warm brown (rgb), matches the silk's shadows
+const OUTSIDE_TEXT = "#40392F"
+const HALO = "250 243 222" // deep warm brown (rgb), matches the silk's shadows
 const silkTitleShadow =
   `0 1px 1px rgb(${HALO} / 55%), 0 2px 8px rgb(${HALO} / 55%), 0 6px 24px rgb(${HALO} / 45%)`
 const silkScriptShadow =
@@ -65,9 +65,9 @@ const silkGlowStyle = {
 
 // Primary button: deep navy with a soft peach ring
 const buttonStyle = {
-  background: "linear-gradient(180deg, #9B6554 0%, #875547 100%)",
+  background: "linear-gradient(180deg, #F8EAAE 0%, #F1D56C 100%)",
   borderColor: "rgb(255 255 255 / 70%)",
-  color: "#FFFFFF",
+  color: "#40392F",
   boxShadow:
     "0 0 0 4px color-mix(in srgb, var(--color-motif-blush) 55%, transparent), 0 12px 24px -10px color-mix(in srgb, var(--color-welcome-navy) 60%, transparent)",
 } as const

@@ -61,12 +61,12 @@ export function RSVP({ onSuccess }: RSVPFormProps) {
     <Section id="rsvp" className="relative py-24 md:py-36 overflow-hidden">
       {/* Decorative background elements (transparent section) */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-10 left-10 w-24 h-24 bg-[#B97865]/10 rounded-full blur-2xl animate-pulse" />
-        <div className="absolute top-20 right-20 w-20 h-20 bg-[#D9A08C]/15 rounded-full blur-xl animate-pulse" />
-        <div className="absolute bottom-20 left-20 w-28 h-28 bg-[#B97865]/8 rounded-full blur-2xl animate-pulse" />
-        <div className="absolute bottom-10 right-10 w-16 h-16 bg-[#D9A08C]/12 rounded-full blur-lg animate-pulse" />
-        <div className="absolute top-1/4 left-0 w-full h-px bg-gradient-to-r from-transparent via-[#B97865]/30 to-transparent" />
-        <div className="absolute bottom-1/4 left-0 w-full h-px bg-gradient-to-r from-transparent via-[#D9A08C]/25 to-transparent" />
+        <div className="absolute top-10 left-10 w-24 h-24 bg-[#F1D56C]/10 rounded-full blur-2xl animate-pulse" />
+        <div className="absolute top-20 right-20 w-20 h-20 bg-[#FAF3DE]/15 rounded-full blur-xl animate-pulse" />
+        <div className="absolute bottom-20 left-20 w-28 h-28 bg-[#F1D56C]/8 rounded-full blur-2xl animate-pulse" />
+        <div className="absolute bottom-10 right-10 w-16 h-16 bg-[#FAF3DE]/12 rounded-full blur-lg animate-pulse" />
+        <div className="absolute top-1/4 left-0 w-full h-px bg-gradient-to-r from-transparent via-[#F1D56C]/30 to-transparent" />
+        <div className="absolute bottom-1/4 left-0 w-full h-px bg-gradient-to-r from-transparent via-[#FAF3DE]/25 to-transparent" />
         {/* Corner flowers (same asset, oriented per corner) */}
         {/* Top-right (base) */}
         <img
@@ -101,34 +101,34 @@ export function RSVP({ onSuccess }: RSVPFormProps) {
       <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Enhanced Header */}
         <div className="text-center mb-12 md:mb-20">
-          <h2 className="text-3xl sm:text-4xl md:text-7xl lg:text-8xl font-serif font-bold text-[#FFF8F2] mb-4 md:mb-6 text-balance drop-shadow-lg relative overflow-visible">
-            <span className="relative z-10 bg-clip-text text-transparent bg-gradient-to-br from-[#B97865] via-[#D9A08C] to-[#FFF8F2]">RSVP</span>
-            <span className="absolute -inset-x-3 -inset-y-4 text-[#B97865]/25 blur-[28px] -z-10 select-none pointer-events-none">RSVP</span>
+          <h2 className="text-3xl sm:text-4xl md:text-7xl lg:text-8xl font-serif font-bold text-[#FAF3DE] mb-4 md:mb-6 text-balance drop-shadow-lg relative overflow-visible">
+            <span className="relative z-10 bg-clip-text text-transparent bg-gradient-to-br from-[#40392F] via-[#40392F] to-[#40392F]">RSVP</span>
+            <span className="absolute -inset-x-3 -inset-y-4 text-[#F1D56C]/25 blur-[28px] -z-10 select-none pointer-events-none">RSVP</span>
           </h2>
           {/* Decorative divider under title */}
           <div className="flex items-center justify-center gap-3 md:gap-4 mb-2 md:mb-4">
-            <div className="w-10 sm:w-16 h-px bg-gradient-to-r from-transparent via-[#B97865]/60 to-[#D9A08C]/30" />
-            <div className="w-2 h-2 rounded-full bg-[#B97865]" />
-            <div className="w-10 sm:w-16 h-px bg-gradient-to-l from-transparent via-[#B97865]/60 to-[#D9A08C]/30" />
+            <div className="w-10 sm:w-16 h-px bg-gradient-to-r from-transparent via-[#F1D56C]/60 to-[#FAF3DE]/30" />
+            <div className="w-2 h-2 rounded-full bg-[#F1D56C]" />
+            <div className="w-10 sm:w-16 h-px bg-gradient-to-l from-transparent via-[#F1D56C]/60 to-[#FAF3DE]/30" />
           </div>
 
           {/* Elegant Card */}
           <div className="max-w-3xl mx-auto px-2 sm:px-4">
             <div className="relative">
               {/* Decorative Background */}
-              <div className="absolute inset-0 bg-gradient-to-br from-[#B97865]/10 via-[#D9A08C]/15 to-[#FFF8F2]/5 rounded-2xl blur-xl -z-10"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-[#F1D56C]/10 via-[#FAF3DE]/15 to-[#FAF3DE]/5 rounded-2xl blur-xl -z-10"></div>
               
-              <div className="bg-white/90 backdrop-blur-md rounded-2xl p-6 sm:p-10 md:p-12 border border-[#B97865]/30 shadow-2xl">
+              <div className="bg-white/90 backdrop-blur-md rounded-2xl p-6 sm:p-10 md:p-12 border border-[#F1D56C]/30 shadow-2xl">
                 <div className="flex items-center justify-center gap-2 md:gap-3 mb-3 md:mb-4">
   
-                  <h3 className="text-xl sm:text-3xl md:text-4xl font-sans font-bold text-[#44413C]">
+                  <h3 className="text-xl sm:text-3xl md:text-4xl font-sans font-bold text-[#40392F]">
                     We Reserved Seats for You
                   </h3>
                 </div>
                 
-                <p className="text-sm sm:text-lg md:text-xl text-[#44413C]/80 font-sans font-light leading-relaxed">
+                <p className="text-sm sm:text-lg md:text-xl text-[#40392F]/80 font-sans font-light leading-relaxed">
                   The favor of your reply is kindly requested on or before{" "}
-                  <span className="font-semibold text-[#44413C] bg-[#44413C]/10 px-2 py-1 rounded-lg text-sm md:text-base">
+                  <span className="font-semibold text-[#40392F] bg-[#40392F]/10 px-2 py-1 rounded-lg text-sm md:text-base">
                     {siteConfig.details.rsvp.deadline}
                   </span>
                 </p>
@@ -143,11 +143,11 @@ export function RSVP({ onSuccess }: RSVPFormProps) {
             {/* Form Background */}
             <div className="absolute inset-0 bg-gradient-to-br from-white/95 to-white/90 rounded-3xl blur-sm -z-10"></div>
             
-            <div className="bg-white/95 backdrop-blur-md rounded-3xl p-6 sm:p-10 md:p-12 shadow-2xl border border-[#B97865]/20">
+            <div className="bg-white/95 backdrop-blur-md rounded-3xl p-6 sm:p-10 md:p-12 shadow-2xl border border-[#F1D56C]/20">
               <form ref={formRef} onSubmit={handleSubmit} className="space-y-5 sm:space-y-9">
                 {/* Full Name Field */}
                 <div className="space-y-1 sm:space-y-3">
-                  <label className="flex items-center gap-2 text-xs sm:text-base font-medium text-[#44413C] font-sans">
+                  <label className="flex items-center gap-2 text-xs sm:text-base font-medium text-[#40392F] font-sans">
                     <User className="h-3 w-3 sm:h-4 sm:w-4" />
                     Full Name *
                   </label>
@@ -156,7 +156,7 @@ export function RSVP({ onSuccess }: RSVPFormProps) {
                       name="name"
                       required
                       placeholder="Enter your full name"
-                      className="w-full px-3 sm:px-6 py-2 sm:py-4 border-2 border-[#44413C]/20 focus:border-[#44413C] rounded-lg sm:rounded-2xl text-sm sm:text-lg font-sans placeholder:text-[#44413C]/40 transition-all duration-300 hover:border-[#44413C]/40 focus:ring-4 focus:ring-[#44413C]/10 bg-white/80 backdrop-blur-sm"
+                      className="w-full px-3 sm:px-6 py-2 sm:py-4 border-2 border-[#40392F]/20 focus:border-[#40392F] rounded-lg sm:rounded-2xl text-sm sm:text-lg font-sans placeholder:text-[#40392F]/40 transition-all duration-300 hover:border-[#40392F]/40 focus:ring-4 focus:ring-[#40392F]/10 bg-white/80 backdrop-blur-sm"
                     />
                     <div className="absolute inset-0 rounded-lg sm:rounded-2xl bg-gradient-to-r from-primary/5 to-secondary/5 opacity-0 hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
                   </div>
@@ -164,7 +164,7 @@ export function RSVP({ onSuccess }: RSVPFormProps) {
 
                 {/* Number of Guests Field */}
                 <div className="space-y-1.5 sm:space-y-3.5">
-                  <label className="flex items-center gap-2 text-xs sm:text-base font-medium text-[#44413C] font-sans">
+                  <label className="flex items-center gap-2 text-xs sm:text-base font-medium text-[#40392F] font-sans">
                     <Users className="h-3 w-3 sm:h-4 sm:w-4" />
                     Number of Guests *
                   </label>
@@ -172,7 +172,7 @@ export function RSVP({ onSuccess }: RSVPFormProps) {
                     <select
                       name="guests"
                       required
-                      className="w-full px-3 sm:px-6 py-2.5 sm:py-4 border-2 border-[#44413C]/20 focus:border-[#44413C] rounded-lg sm:rounded-2xl text-sm sm:text-lg font-sans bg-white/80 backdrop-blur-sm transition-all duration-300 hover:border-[#44413C]/40 focus:ring-4 focus:ring-[#44413C]/10 cursor-pointer appearance-none"
+                      className="w-full px-3 sm:px-6 py-2.5 sm:py-4 border-2 border-[#40392F]/20 focus:border-[#40392F] rounded-lg sm:rounded-2xl text-sm sm:text-lg font-sans bg-white/80 backdrop-blur-sm transition-all duration-300 hover:border-[#40392F]/40 focus:ring-4 focus:ring-[#40392F]/10 cursor-pointer appearance-none"
                     >
                       <option value="">Select number of guests</option>
                       <option value="1">1 Guest</option>
@@ -187,7 +187,7 @@ export function RSVP({ onSuccess }: RSVPFormProps) {
 
                 {/* Message Field */}
                 <div className="space-y-1.5 sm:space-y-3.5">
-                  <label className="flex items-center gap-2 text-xs sm:text-base font-medium text-[#44413C] font-sans">
+                  <label className="flex items-center gap-2 text-xs sm:text-base font-medium text-[#40392F] font-sans">
                     <MessageSquare className="h-3 w-3 sm:h-4 sm:w-4" />
                     Message (Optional)
                   </label>
@@ -196,7 +196,7 @@ export function RSVP({ onSuccess }: RSVPFormProps) {
                       name="message"
                       placeholder="Any special requests or dietary restrictions?"
                       rows={3}
-                      className="w-full px-3 sm:px-6 py-2.5 sm:py-4 border-2 border-[#44413C]/20 focus:border-[#44413C] rounded-lg sm:rounded-2xl min-h-[100px] sm:min-h-[160px] text-sm sm:text-lg font-sans placeholder:text-[#44413C]/40 transition-all duration-300 hover:border-[#44413C]/40 focus:ring-4 focus:ring-[#44413C]/10 resize-none bg-white/80 backdrop-blur-sm"
+                      className="w-full px-3 sm:px-6 py-2.5 sm:py-4 border-2 border-[#40392F]/20 focus:border-[#40392F] rounded-lg sm:rounded-2xl min-h-[100px] sm:min-h-[160px] text-sm sm:text-lg font-sans placeholder:text-[#40392F]/40 transition-all duration-300 hover:border-[#40392F]/40 focus:ring-4 focus:ring-[#40392F]/10 resize-none bg-white/80 backdrop-blur-sm"
                     />
                     <div className="absolute inset-0 rounded-lg sm:rounded-2xl bg-gradient-to-r from-primary/5 to-secondary/5 opacity-0 hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
                   </div>
@@ -207,7 +207,7 @@ export function RSVP({ onSuccess }: RSVPFormProps) {
                   <Button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full bg-gradient-to-r from-[#44413C] via-[#44413C] to-[#44413C] hover:from-[#44413C] hover:to-[#44413C] text-[#FFF8F2] border-2 border-[#FFF8F2] px-6 sm:px-10 py-3 sm:py-5 rounded-lg sm:rounded-2xl text-base sm:text-xl font-sans font-semibold shadow-2xl transition-all duration-300 hover:shadow-3xl hover:scale-[1.02] active:scale-[0.98] disabled:opacity-70 disabled:cursor-not-allowed relative overflow-hidden tracking-wide"
+                    className="w-full bg-gradient-to-r from-[#40392F] via-[#40392F] to-[#40392F] hover:from-[#40392F] hover:to-[#40392F] text-[#FAF3DE] border-2 border-[#FAF3DE] px-6 sm:px-10 py-3 sm:py-5 rounded-lg sm:rounded-2xl text-base sm:text-xl font-sans font-semibold shadow-2xl transition-all duration-300 hover:shadow-3xl hover:scale-[1.02] active:scale-[0.98] disabled:opacity-70 disabled:cursor-not-allowed relative overflow-hidden tracking-wide"
                   >
                     <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
                     {isSubmitting ? (

@@ -42,16 +42,16 @@ const aboveTheBeyond = localFont({
   variable: "--font-above-beyond",
 })
 
-// Palette (app/globals.css motif tokens): navy #44413C for text, slate navy for labels,
-// peach #B97865 / #D9A08C / #F1C8B8 for accents, frames and soft surfaces.
+// Palette (app/globals.css motif tokens): navy #40392F for text, slate navy for labels,
+// peach #F1D56C / #FAF3DE / #F8EAAE for accents, frames and soft surfaces.
 const NAVY = "var(--color-welcome-navy)"
 const TEAL = "var(--color-welcome-text)"
 const BUTTON = "var(--color-welcome-heading)"
 const PEACH = "var(--color-motif-medium)"
 const PEACH_MID = "var(--color-motif-blush)"
-const PEACH_LIGHT = "#F1C8B8"
-const IVORY = "#FFF8F2"
-const PAPER = "#FFF8F2"
+const PEACH_LIGHT = "#F8EAAE"
+const IVORY = "#FAF3DE"
+const PAPER = "#FAF3DE"
 // Guest names and avatars
 const LEAF = NAVY
 const DEEP_GRADIENT = "linear-gradient(180deg, var(--color-welcome-heading) 0%, var(--color-welcome-navy) 100%)"
@@ -885,7 +885,7 @@ export function GuestList() {
                         className="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full sm:h-9 sm:w-9"
                         style={{ background: SAGE_GRADIENT }}
                       >
-                        <User className="h-3.5 w-3.5 sm:h-4 sm:w-4" style={{ color: IVORY }} />
+                        <User className="h-3.5 w-3.5 sm:h-4 sm:w-4" style={{ color: "#40392F" }} />
                       </div>
                       <div className="min-w-0 flex-1">
                         <div
@@ -933,7 +933,7 @@ export function GuestList() {
                       className="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-full"
                       style={{ background: SAGE_GRADIENT }}
                     >
-                      <UserPlus className="h-4 w-4" style={{ color: IVORY }} />
+                      <UserPlus className="h-4 w-4" style={{ color: "#40392F" }} />
                     </div>
                     <div className="flex-1">
                       <h4

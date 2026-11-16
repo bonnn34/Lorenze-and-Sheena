@@ -91,7 +91,7 @@ const sectionsRevealVariants = {
 }
 
 /** WebGL Silk needs a hex color. */
-const SILK_COLOR = "#D9A08C" // peach silk behind the invitation sections
+const SILK_COLOR = "#FAF3DE" // peach silk behind the invitation sections
 
 type InvitationPageProps = {
   /** Which principal-sponsor sheet the entourage shows (googleAPI.sponsorsInviteOne / Two) */
@@ -255,7 +255,7 @@ export function InvitationPage({ sponsorsList, showEntourage = true }: Invitatio
           >
             {cinematicEntry && (
               <motion.div
-                className="fixed inset-0 z-[28] pointer-events-none bg-[#FFF8F2]"
+                className="fixed inset-0 z-[28] pointer-events-none bg-[#FAF3DE]"
                 aria-hidden="true"
                 initial={{ clipPath: "circle(0% at 50% 46%)", opacity: 0.98 }}
                 animate={{ clipPath: "circle(145% at 50% 46%)", opacity: 0 }}
@@ -318,7 +318,7 @@ export function InvitationPage({ sponsorsList, showEntourage = true }: Invitatio
               {/* One continuous circle pattern behind the video and love story (same as Details) — no seam between them */}
               <div className="relative">
                 <PlainBubbles />
-               <CoupleVideo skyBackdrop={false} />
+               {siteConfig.coupleVideo.enabled && <CoupleVideo skyBackdrop={false} />}
                 <LoveStory skyBackdrop={false} />
               </div>
               <Countdown />
@@ -339,7 +339,7 @@ export function InvitationPage({ sponsorsList, showEntourage = true }: Invitatio
                 <BookOfGuests background={false} />
                 <FAQ background={false} />
               </div>
-              <Registry />
+              {siteConfig.registry.enabled && <Registry />}
               <WeddingPlaylist /> 
               <SnapShare />
               {/* Full-bleed photo section — paints its own background, so it sits outside the footer's pattern */}

@@ -6,22 +6,22 @@
    loader root and the envelope screen, so both always share the same colors */
 .loading-screen--poster,
 .env-invite-screen--poster {
-  --lp-gold-1: #6f4c1f;
-  --lp-gold-2: #a67c3d;
-  --lp-gold-3: #d2b06e;
-  --lp-ink: #5a4020;      /* small caps text — deep enough to read over the photos */
-  --lp-ink-soft: #6b5230;
-  --lp-wash-top: #cee4f4;
-  --lp-wash-bottom: #f6dee6;
+  --lp-gold-1: #40392F;
+  --lp-gold-2: #40392F;
+  --lp-gold-3: #40392F;
+  --lp-ink: #8D5C34;      /* small caps text — deep enough to read over the photos */
+  --lp-ink-soft: #8D5C34;
+  --lp-wash-top: #FAF3DE;
+  --lp-wash-bottom: #FAF3DE;
 }
 
 .lp {
-  --lp-halo: 0 0 2px rgba(255, 255, 255, 0.95), 0 0 8px rgba(255, 255, 255, 0.9), 0 0 16px rgba(255, 252, 248, 0.7);
+  --lp-halo: 0 0 2px rgba(255, 255, 255, 0.95), 0 0 8px rgba(255, 255, 255, 0.9), 0 0 16px rgba(250, 243, 222, 0.7);
 
   position: absolute;
   inset: 0;
   overflow: hidden;
-  background: #eef2f6;
+  background: #FAF3DE;
   color: var(--lp-ink);
 }
 
@@ -35,7 +35,7 @@
   z-index: 0;
   overflow: hidden;
   pointer-events: none;
-  background: #eef2f6;
+  background: #FAF3DE;
 }
 /* Pastel wash over the photos: sky blue at the top, soft in the middle, blush at the bottom */
 .lp-bd__wash {
@@ -44,10 +44,10 @@
   background:
     linear-gradient(
       to bottom,
-      color-mix(in srgb, var(--lp-wash-top) 85%, transparent) 0%,
-      color-mix(in srgb, color-mix(in srgb, var(--lp-wash-top) 60%, white) 60%, transparent) 22%,
-      rgba(246, 246, 248, 0.48) 45%,
-      color-mix(in srgb, color-mix(in srgb, var(--lp-wash-bottom) 60%, white) 66%, transparent) 70%,
+      color-mix(in srgb, var(--lp-wash-top) 75%, transparent) 0%,
+      color-mix(in srgb, color-mix(in srgb, var(--lp-wash-top) 35%, white) 50%, transparent) 22%,
+      rgba(250, 243, 222, 0.30) 45%,
+      color-mix(in srgb, color-mix(in srgb, var(--lp-wash-bottom) 60%, white) 62%, transparent) 70%,
       color-mix(in srgb, var(--lp-wash-bottom) 85%, transparent) 100%
     );
 }
@@ -55,14 +55,14 @@
 .lp-bd__frame {
   position: absolute;
   inset: calc(var(--lp-unit) * 2.2);
-  border: 1px solid rgba(170, 132, 72, 0.8);
+  border: 1px solid rgba(199, 162, 75, 0.8);
   border-radius: 2px;
 }
 .lp-bd__frame::after {
   content: '';
   position: absolute;
   inset: calc(var(--lp-unit) * 1.3);
-  border: 1px solid rgba(170, 132, 72, 0.45);
+  border: 1px solid rgba(199, 162, 75, 0.45);
   border-radius: 1px;
 }
 /* Floral corners, tucked right into the screen corners */
@@ -93,9 +93,9 @@
   inset: 0;
   pointer-events: none;
   background:
-    radial-gradient(ellipse 66% 30% at 50% 67%, rgba(255, 253, 250, 0.95), rgba(255, 253, 250, 0.55) 55%, rgba(255, 253, 250, 0) 100%),
+    radial-gradient(ellipse 66% 30% at 50% 67%, rgba(250, 243, 222, 0.95), rgba(250, 243, 222, 0.55) 55%, rgba(250, 243, 222, 0) 100%),
     radial-gradient(ellipse 78% 15% at 50% 13%, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0) 100%),
-    radial-gradient(ellipse 70% 7% at 50% 88%, rgba(255, 253, 250, 0.85), rgba(255, 253, 250, 0) 100%);
+    radial-gradient(ellipse 70% 7% at 50% 88%, rgba(250, 243, 222, 0.85), rgba(250, 243, 222, 0) 100%);
 }
 
 /* Couple cut-out in the middle, fading out into the details */
@@ -110,7 +110,7 @@
   transform: translateX(-50%);
   -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 55%, rgba(0, 0, 0, 0.3) 78%, transparent 97%);
   mask-image: linear-gradient(to bottom, #000 0%, #000 55%, rgba(0, 0, 0, 0.3) 78%, transparent 97%);
-  filter: drop-shadow(0 6px 18px rgba(80, 70, 90, 0.18));
+  filter: drop-shadow(0 6px 18px rgba(64, 57, 47, 0.18));
   pointer-events: none;
   user-select: none;
 }
@@ -226,7 +226,7 @@
   display: inline-block;
   width: 3.5cqw;
   height: 1px;
-  background: linear-gradient(to right, rgba(170, 135, 80, 0), rgba(170, 135, 80, 0.9), rgba(170, 135, 80, 0));
+  background: linear-gradient(to right, rgba(199, 162, 75, 0), rgba(199, 162, 75, 0.9), rgba(199, 162, 75, 0));
 }
 
 /* ── Middle: space for the couple, short lines either side ───────────── */
@@ -353,14 +353,14 @@
   margin-top: 1.3cqh;
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.65);
-  box-shadow: inset 0 0 0 1px rgba(190, 160, 120, 0.25);
+  box-shadow: inset 0 0 0 1px rgba(199, 162, 75, 0.25);
 }
 .lp__bar {
   position: absolute;
   inset: 0 auto 0 0;
   width: 0%;
   border-radius: inherit;
-  background: linear-gradient(to right, #b9d3ec, #d8c3e6 45%, #efc6d3 75%, #e3c58e);
+  background: linear-gradient(to right, #C7A24B, #FAF3DE 45%, #C7A24B 75%, #FAF3DE);
   animation-name: lp-progress;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
@@ -376,8 +376,8 @@
   height: 1.8cqh;
   margin-top: -0.9cqh;
   border-radius: 50%;
-  background: radial-gradient(circle, #fff 0%, #fff 35%, rgba(255, 245, 230, 0.6) 60%, rgba(255, 245, 230, 0) 72%);
-  box-shadow: 0 0 10px 3px rgba(255, 240, 220, 0.75);
+  background: radial-gradient(circle, #fff 0%, #fff 35%, rgba(250, 243, 222, 0.6) 60%, rgba(250, 243, 222, 0) 72%);
+  box-shadow: 0 0 10px 3px rgba(250, 243, 222, 0.75);
 }
 .lp__percent {
   margin-top: 1.1cqh;
@@ -446,7 +446,7 @@
 /* Envelope screen (Hero.tsx) on the poster backdrop: its lines use the poster's ink + halo */
 .env-invite-screen--poster .env-invite-hint {
   color: var(--lp-ink);
-  text-shadow: 0 0 2px rgba(255, 255, 255, 0.95), 0 0 8px rgba(255, 255, 255, 0.9), 0 0 16px rgba(255, 252, 248, 0.7);
+  text-shadow: 0 0 2px rgba(255, 255, 255, 0.95), 0 0 8px rgba(255, 255, 255, 0.9), 0 0 16px rgba(250, 243, 222, 0.7);
 }
 
 /* ── Envelope entrance on the poster backdrop (Hero.tsx, .is-arriving) ───
@@ -509,7 +509,7 @@
   background: linear-gradient(
     to right,
     rgba(255, 255, 255, 0) 0%,
-    rgba(255, 252, 245, 0.85) 50%,
+    rgba(250, 243, 222, 0.85) 50%,
     rgba(255, 255, 255, 0) 100%
   );
 }
@@ -568,9 +568,9 @@
 .env-invite-screen.env-invite-screen--textured[data-phase] .env-invite-pocket-right {
   background:
     /* soft light from the top left, a touch of shade toward the bottom right */
-    linear-gradient(160deg, rgb(255 250 245 / 14%) 0%, rgb(255 250 245 / 0%) 45%, rgb(90 50 40 / 10%) 100%) 0 0 / 100cqw calc(100cqw / var(--env-ratio)) no-repeat,
+    linear-gradient(160deg, rgb(250 243 222 / 14%) 0%, rgb(250 243 222 / 0%) 45%, rgb(90 50 40 / 10%) 100%) 0 0 / 100cqw calc(100cqw / var(--env-ratio)) no-repeat,
     var(--env-card-texture) 50% var(--env-card-y) / 100cqw auto no-repeat,
-    #e9b8a6;
+    #FAF3DE;
 }
 
 /* ── Linen envelope paper (poster backdrop, no envelopeTexture image) ───
@@ -579,15 +579,15 @@
    the plain paper surface, so the flap's layer sizing (envelope-invite.css) still lines the
    light up across the folds. The inside liner pattern is a separate element and is untouched. */
 .env-invite-screen.env-invite-screen--poster .env-invite-envelope {
-  --env-highlight: #f3cdbf;
-  --env-base: #e9b8a6;
-  --env-fold: #dda592;
+  --env-highlight: #FAF3DE;
+  --env-base: #FAF3DE;
+  --env-fold: #FAF3DE;
   --env-paper-surface:
     /* light fibres (horizontal, short) — one 640px tile, larger than the envelope, so no seams */
     url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='640' height='640'%3E%3Cfilter id='f'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.045 0.75' numOctaves='2' seed='4'/%3E%3CfeColorMatrix values='0 0 0 0 1  0 0 0 0 0.97  0 0 0 0 0.95  0 0 0 0.85 -0.4'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23f)'/%3E%3C/svg%3E"),
     /* darker fibres (vertical, short) + fine speckle */
     url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='640' height='640'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75 0.05' numOctaves='2' seed='9'/%3E%3CfeColorMatrix values='0 0 0 0 0.55  0 0 0 0 0.3  0 0 0 0 0.25  0 0 0 0.7 -0.34'/%3E%3C/filter%3E%3Cfilter id='s'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.4' numOctaves='1' seed='2'/%3E%3CfeColorMatrix values='0 0 0 0 0.6  0 0 0 0 0.35  0 0 0 0 0.3  0 0 0 0.6 -0.3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23g)'/%3E%3Crect width='100%25' height='100%25' filter='url(%23s)'/%3E%3C/svg%3E"),
-    radial-gradient(120% 90% at 18% 6%, rgb(255 248 242 / 26%) 0%, transparent 55%),
+    radial-gradient(120% 90% at 18% 6%, rgb(250 243 222 / 26%) 0%, transparent 55%),
     radial-gradient(110% 80% at 90% 100%, rgb(120 70 60 / 12%) 0%, transparent 60%),
     linear-gradient(170deg, var(--env-highlight) 0%, var(--env-base) 45%, var(--env-fold) 100%);
 }

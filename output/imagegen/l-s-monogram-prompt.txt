@@ -1,0 +1,6 @@
+﻿Mode: built-in image_gen tool
+Transparency: true
+
+Use case: logo-brand.
+Asset type: final wedding monogram for invitations, wax seals and stationery, high-resolution square PNG with fully transparent background.
+Create one distinctive, elegant and sophisticated monogram featuring exactly the uppercase initials "L" and "S". Refined calligraphic typography with graceful thick-to-thin strokes and beautifully shaped, clearly readable capital letters. Subtly intertwine the L and S as a harmonious, visually balanced composition while preserving each letter's recognizable silhouette. The initials are the primary focal point. Add only a few delicate flourishes and two tiny minimalist botanical sprigs near the lower sides, with ample open space. Decorations should be restrained and legible at wax-seal size. Timeless romantic luxury, clean precise 2D vector-like edges, balanced proportions. Use a single solid dark charcoal ink, suitable against ivory stationery. Center the complete monogram with generous transparent padding so no flourish is clipped. Request highest available resolution, ideally 2048 x 2048 or higher. No additional letters, no words, no ampersand, no dates, no enclosing badge, no wax seal mockup, no paper texture, no shadows, no bevels, no 3D, no gradients. Background must have actual transparent alpha, not white or a drawn checkerboard.

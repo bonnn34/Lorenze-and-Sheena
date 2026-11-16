@@ -32,7 +32,7 @@ export function PrincipalSponsors() {
       align === "right" ? "text-right" : align === "left" ? "text-left" : "text-center"
     return (
       <h3
-        className={`relative ${cormorant.className} text-xs sm:text-sm md:text-base lg:text-lg font-semibold uppercase text-[#44413C] mb-1.5 sm:mb-2 md:mb-3 tracking-[0.1em] sm:tracking-[0.15em] ${textAlign} ${className} transition-all duration-300`}
+        className={`relative ${cormorant.className} text-xs sm:text-sm md:text-base lg:text-lg font-semibold uppercase text-[#40392F] mb-1.5 sm:mb-2 md:mb-3 tracking-[0.1em] sm:tracking-[0.15em] ${textAlign} ${className} transition-all duration-300`}
       >
         {children}
       </h3>
@@ -50,10 +50,10 @@ export function PrincipalSponsors() {
         className={`relative flex flex-col ${containerAlign} justify-center py-1 sm:py-1.5 md:py-2.5 w-full group/item transition-all duration-300 hover:scale-[1.02] sm:hover:scale-[1.03]`}
       >
         {/* Hover highlight effect */}
-        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#44413C]/18 to-transparent opacity-0 group-hover/item:opacity-100 transition-opacity duration-300 rounded-md" />
+        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#40392F]/18 to-transparent opacity-0 group-hover/item:opacity-100 transition-opacity duration-300 rounded-md" />
 
         <p
-          className={`relative text-[#44413C] text-[9px] sm:text-[10px] md:text-xs lg:text-sm font-semibold leading-snug break-words ${textAlign} group-hover/item:text-[#44413C] transition-all duration-300`}
+          className={`relative text-[#40392F] text-[9px] sm:text-[10px] md:text-xs lg:text-sm font-semibold leading-snug break-words ${textAlign} group-hover/item:text-[#40392F] transition-all duration-300`}
         >
           {name}
         </p>
@@ -119,7 +119,7 @@ export function PrincipalSponsors() {
     <div ref={sectionRef}>
       <Section
         id="sponsors"
-        className="relative py-12 md:py-16 lg:py-20 overflow-hidden bg-[#44413C]"
+        className="relative py-12 md:py-16 lg:py-20 overflow-hidden bg-[#40392F]"
       >
         {/* Background image - matching gallery */}
         <div className="absolute inset-0 pointer-events-none overflow-hidden">
@@ -129,8 +129,8 @@ export function PrincipalSponsors() {
             aria-hidden="true"
             className="absolute inset-0 w-full h-full object-cover opacity-30"
           />
-          {/* Overlay with #44413C */}
-          <div className="absolute inset-0 bg-[#44413C]/40" />
+          {/* Overlay with #40392F */}
+          <div className="absolute inset-0 bg-[#40392F]/40" />
         </div>
 
         {/* Section Header */}
@@ -141,29 +141,29 @@ export function PrincipalSponsors() {
         >
           {/* Small label */}
           <p
-            className={`${cormorant.className} text-[0.7rem] sm:text-xs md:text-sm uppercase tracking-[0.28em] text-[#D9A08C] mb-2`}
+            className={`${cormorant.className} text-[0.7rem] sm:text-xs md:text-sm uppercase tracking-[0.28em] text-[#FAF3DE] mb-2`}
             style={{ textShadow: "0 2px 10px rgba(0,0,0,0.8)" }}
           >
             Our Beloved Principal Sponsors
           </p>
 
           <h2
-            className="style-script-regular text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-[#D9A08C] mb-1.5 sm:mb-3 md:mb-4"
+            className="style-script-regular text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-[#FAF3DE] mb-1.5 sm:mb-3 md:mb-4"
             style={{ textShadow: "0 4px 18px rgba(0,0,0,0.9)" }}
           >
             Standing with {groomNickname} &amp; {brideNickname}
           </h2>
 
           {/* Sublabel/Description */}
-          <p className={`${cormorant.className} text-xs sm:text-sm md:text-base text-[#D9A08C]/95 max-w-2xl mx-auto leading-relaxed px-2 mt-2 mb-3`}>
+          <p className={`${cormorant.className} text-xs sm:text-sm md:text-base text-[#FAF3DE]/95 max-w-2xl mx-auto leading-relaxed px-2 mt-2 mb-3`}>
             We are deeply honored to have these wonderful couples as our principal sponsors, who serve as witnesses to our union and guides in our journey together. Their presence and support make our special day even more meaningful.
           </p>
 
           {/* Simple divider */}
           <div className="flex items-center justify-center gap-2 mt-3 sm:mt-4">
-            <div className="w-8 sm:w-12 md:w-16 h-px bg-gradient-to-r from-transparent via-[#44413C]/80 to-transparent" />
-            <div className="w-1.5 h-1.5 rounded-full bg-[#D9A08C]/80" />
-            <div className="w-8 sm:w-12 md:w-16 h-px bg-gradient-to-l from-transparent via-[#44413C]/80 to-transparent" />
+            <div className="w-8 sm:w-12 md:w-16 h-px bg-gradient-to-r from-transparent via-[#40392F]/80 to-transparent" />
+            <div className="w-1.5 h-1.5 rounded-full bg-[#FAF3DE]/80" />
+            <div className="w-8 sm:w-12 md:w-16 h-px bg-gradient-to-l from-transparent via-[#40392F]/80 to-transparent" />
           </div>
         </div>
 
@@ -174,24 +174,24 @@ export function PrincipalSponsors() {
           }`}
         >
           {/* Card with theme matching site */}
-          <div className="relative bg-[#FFF8F2]/95 backdrop-blur-md rounded-xl sm:rounded-2xl overflow-hidden border border-[#44413C]/60 shadow-[0_20px_60px_rgba(68,65,60,0.35)] transition-all duration-500 group">
+          <div className="relative bg-[#FAF3DE]/95 backdrop-blur-md rounded-xl sm:rounded-2xl overflow-hidden border border-[#40392F]/60 shadow-[0_20px_60px_rgba(64,57,47,0.35)] transition-all duration-500 group">
             {/* Card content */}
             <div className="relative py-3 sm:py-6 md:py-8 z-10">
               <div className="relative z-10 w-full">
               {isLoading ? (
                 <div className="flex items-center justify-center py-24 sm:py-28 md:py-32">
                   <div className="flex flex-col items-center gap-4">
-                    <Loader2 className="h-10 w-10 sm:h-12 sm:w-12 animate-spin text-[#44413C]/70" />
-                    <span className="text-[#44413C]/80 font-serif text-base sm:text-lg">Loading sponsors...</span>
+                    <Loader2 className="h-10 w-10 sm:h-12 sm:w-12 animate-spin text-[#40392F]/70" />
+                    <span className="text-[#40392F]/80 font-serif text-base sm:text-lg">Loading sponsors...</span>
                   </div>
                 </div>
               ) : error ? (
                 <div className="flex items-center justify-center py-24 sm:py-28 md:py-32">
                   <div className="text-center">
-                    <p className="text-[#44413C] font-serif text-base sm:text-lg mb-3">{error}</p>
+                    <p className="text-[#40392F] font-serif text-base sm:text-lg mb-3">{error}</p>
                     <button
                       onClick={fetchSponsors}
-                      className="text-[#44413C]/90 hover:text-[#44413C] font-serif underline transition-colors duration-200"
+                      className="text-[#40392F]/90 hover:text-[#40392F] font-serif underline transition-colors duration-200"
                     >
                       Try again
                     </button>
@@ -199,8 +199,8 @@ export function PrincipalSponsors() {
                 </div>
               ) : sponsorPairs.length === 0 ? (
                 <div className="text-center py-24 sm:py-28 md:py-32">
-                  <Users className="h-14 w-14 sm:h-16 sm:w-16 text-[#44413C]/40 mx-auto mb-4" />
-                  <p className="text-[#44413C]/75 font-serif text-base sm:text-lg">No sponsors yet</p>
+                  <Users className="h-14 w-14 sm:h-16 sm:w-16 text-[#40392F]/40 mx-auto mb-4" />
+                  <p className="text-[#40392F]/75 font-serif text-base sm:text-lg">No sponsors yet</p>
                 </div>
               ) : (
                 <div className="mb-3 sm:mb-4 md:mb-6 lg:mb-8 space-y-6 sm:space-y-8">

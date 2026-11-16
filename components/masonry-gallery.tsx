@@ -6,7 +6,7 @@ import { cinzel } from "@/lib/fonts"
 
 
 // Motif colors (app/globals.css): white paper, dusty-blue accents, sky borders
-const IVORY = "#FFF8F2"
+const IVORY = "#FAF3DE"
 const GOLD = "var(--color-welcome-heading)"
 const NAVY = "var(--color-welcome-navy)"
 const GOLD_BORDER = "color-mix(in srgb, var(--color-motif-medium) 60%, transparent)"

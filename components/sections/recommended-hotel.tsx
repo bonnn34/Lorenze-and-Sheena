@@ -24,11 +24,11 @@ const aboveTheBeyond = localFont({
 })
 
 const C = {
-  forest: "#44413C",
-  sage: "#44413C",
-  mustard: "#B97865",
-  butter: "#D9A08C",
-  cream: "#FFF8F2",
+  forest: "#40392F",
+  sage: "#40392F",
+  mustard: "#F1D56C",
+  butter: "#FAF3DE",
+  cream: "#FAF3DE",
 } as const
 
 const sectionBackground = `
@@ -174,7 +174,7 @@ export function RecommendedHotel() {
             icon={
               <Hotel
                 className="h-3.5 w-3.5 sm:h-4 sm:w-4"
-                style={{ color: "var(--color-welcome-green)" }}
+                style={{ color: "var(--color-welcome-text)" }}
                 aria-hidden
               />
             }
@@ -290,7 +290,7 @@ export function RecommendedHotel() {
                   {copied ? (
                     <Check
                       className="h-3.5 w-3.5 flex-shrink-0 sm:h-4 sm:w-4 md:h-5 md:w-5"
-                      style={{ color: "var(--color-welcome-green)" }}
+                      style={{ color: "var(--color-welcome-text)" }}
                     />
                   ) : (
                     <Copy className="h-3.5 w-3.5 flex-shrink-0 sm:h-4 sm:w-4 md:h-5 md:w-5" />

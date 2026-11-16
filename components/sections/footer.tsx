@@ -42,10 +42,10 @@ const aboveTheBeyond = localFont({
 // White cards, navy headings, body-blue text; dusty-blue buttons that deepen to navy on hover.
 const TEAL = "var(--color-welcome-navy)"
 const BUTTON =
-  "linear-gradient(180deg, #9B6554 0%, color-mix(in srgb, #9B6554 72%, #875547) 100%)"
-const BUTTON_HOVER = "#875547"
+  "linear-gradient(180deg, #F8EAAE 0%, color-mix(in srgb, #F8EAAE 72%, #F1D56C) 100%)"
+const BUTTON_HOVER = "#F1D56C"
 const BUTTON_SHADOW = "0 8px 18px -10px color-mix(in srgb, var(--color-welcome-navy) 60%, transparent)"
-const IVORY = "#FFF8F2"
+const IVORY = "#FAF3DE"
 const HAIRLINE = "color-mix(in srgb, var(--color-motif-medium) 60%, transparent)"
 
 const palette = {
@@ -510,7 +510,7 @@ export function Footer({ background = true }: { background?: boolean } = {}) {
                       style={{
                         background: BUTTON,
                         borderColor: "rgb(255 255 255 / 70%)",
-                        color: IVORY,
+                        color: "#40392F",
                         boxShadow: `0 0 0 3px color-mix(in srgb, var(--color-motif-medium) 22%, transparent), ${BUTTON_SHADOW}`,
                       }}
                     >
@@ -547,7 +547,7 @@ export function Footer({ background = true }: { background?: boolean } = {}) {
                             title={label}
                             aria-label={label}
                             className="group inline-flex h-10 w-10 items-center justify-center rounded-full transition-all duration-300 hover:-translate-y-0.5"
-                            style={{ background: BUTTON, color: IVORY, boxShadow: BUTTON_SHADOW }}
+                            style={{ background: BUTTON, color: "#40392F", boxShadow: BUTTON_SHADOW }}
                             onMouseEnter={(e) => {
                               e.currentTarget.style.background = BUTTON_HOVER
                             }}
@@ -582,7 +582,7 @@ export function Footer({ background = true }: { background?: boolean } = {}) {
                     >
                       <span
                         className={`${cinzel.className} min-w-0 truncate text-[0.64rem] font-semibold uppercase tracking-[0.12em] sm:text-[0.68rem]`}
-                        style={{ color: IVORY }}
+                        style={{ color: "#40392F" }}
                       >
                         {item.label}
                       </span>
@@ -591,7 +591,7 @@ export function Footer({ background = true }: { background?: boolean } = {}) {
                         style={{ background: "rgb(255 255 255 / 22%)" }}
                         aria-hidden
                       >
-                        <ChevronRight className="h-3 w-3 transition-transform duration-300 group-hover:translate-x-0.5" style={{ color: IVORY }} />
+                        <ChevronRight className="h-3 w-3 transition-transform duration-300 group-hover:translate-x-0.5" style={{ color: "#40392F" }} />
                       </span>
                     </a>
                   ))}

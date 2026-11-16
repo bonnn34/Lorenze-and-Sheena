@@ -88,7 +88,7 @@ function FieldLabel({ htmlFor, children, required = false }: { htmlFor?: string;
     <label htmlFor={htmlFor} className="flex items-center justify-between gap-2 text-[13px] font-medium text-dash-ink">
       <span>{children}</span>
       {required ? (
-        <span className="rounded-full bg-dash-tint px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-dash-primary">Required</span>
+        <span className="rounded-full bg-dash-tint px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-dash-ink">Required</span>
       ) : (
         <span className="text-[10px] font-medium uppercase tracking-wide text-gray-400">Optional</span>
       )}
@@ -291,7 +291,7 @@ export function GuestRequests({ requests, onRefresh, onApproveRequest, isLoading
           type="button"
           onClick={onRefresh}
           disabled={isLoading}
-          className="inline-flex items-center gap-1.5 rounded-full border border-dash-border bg-white px-3 py-1.5 text-xs font-medium text-dash-primary transition-colors hover:bg-dash-surface disabled:opacity-50"
+          className="inline-flex items-center gap-1.5 rounded-full border border-dash-border bg-white px-3 py-1.5 text-xs font-medium text-dash-ink transition-colors hover:bg-dash-surface disabled:opacity-50"
         >
           <RefreshCw className={`h-3.5 w-3.5 ${isLoading ? "animate-spin" : ""}`} />
           Refresh
@@ -311,7 +311,7 @@ export function GuestRequests({ requests, onRefresh, onApproveRequest, isLoading
       {/* Stats */}
       <div className="grid grid-cols-2 gap-2.5 sm:gap-4 lg:grid-cols-4">
         {[
-          { label: "Requests", value: stats.total, tone: "border-dash-border bg-white text-dash-primary" },
+          { label: "Requests", value: stats.total, tone: "border-dash-border bg-white text-dash-ink" },
           { label: "Will attend", value: stats.attending, tone: "border-green-200 bg-green-50 text-green-700" },
           { label: "Maybe / no answer", value: stats.undecided, tone: "border-amber-200 bg-amber-50 text-amber-700" },
           { label: "Seats requested", value: stats.seats, tone: "border-blue-200 bg-blue-50 text-blue-700" },
@@ -325,7 +325,7 @@ export function GuestRequests({ requests, onRefresh, onApproveRequest, isLoading
 
       {/* Explainer */}
       <div className="flex gap-3 rounded-xl border border-dash-border bg-dash-surface p-3 sm:p-4">
-        <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white text-dash-primary shadow-sm ring-1 ring-dash-border">
+        <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white text-dash-ink shadow-sm ring-1 ring-dash-border">
           <UserPlus className="h-4 w-4" />
         </span>
         <p className="text-xs leading-relaxed text-dash-text sm:text-sm">
@@ -379,7 +379,7 @@ export function GuestRequests({ requests, onRefresh, onApproveRequest, isLoading
                   <div className="mt-3 grid grid-cols-2 gap-2 text-xs">
                     <div className="rounded-lg bg-dash-surface px-3 py-2">
                       <p className="text-[10px] uppercase tracking-wide text-gray-500">Seats</p>
-                      <p className="mt-0.5 font-semibold text-dash-primary">{count}</p>
+                      <p className="mt-0.5 font-semibold text-dash-ink">{count}</p>
                     </div>
                     <div className="min-w-0 rounded-lg bg-dash-surface px-3 py-2">
                       <p className="text-[10px] uppercase tracking-wide text-gray-500">Phone</p>
@@ -397,7 +397,7 @@ export function GuestRequests({ requests, onRefresh, onApproveRequest, isLoading
                   <div className="mt-3 flex gap-2 border-t border-dash-tint pt-3">
                     <button
                       onClick={() => setConfirm({ kind: "approve", request })}
-                      className={`${actionBtn} border-transparent bg-dash-primary font-semibold text-white active:brightness-110`}
+                      className={`${actionBtn} border-transparent bg-dash-primary font-semibold text-dash-ink active:brightness-110`}
                     >
                       <Check className="h-4 w-4" /> Approve
                     </button>
@@ -459,7 +459,7 @@ export function GuestRequests({ requests, onRefresh, onApproveRequest, isLoading
                           {!request.Phone && !email && <span className="text-gray-400">—</span>}
                         </td>
                         <td className="px-4 py-4 text-center lg:px-6">
-                          <span className="text-sm font-semibold text-dash-primary">{seatsOf(request)}</span>
+                          <span className="text-sm font-semibold text-dash-ink">{seatsOf(request)}</span>
                         </td>
                         <td className="px-4 py-4 lg:px-6">
                           {request.Message ? (
@@ -477,7 +477,7 @@ export function GuestRequests({ requests, onRefresh, onApproveRequest, isLoading
                           <div className="flex items-center justify-end gap-2">
                             <button
                               onClick={() => setConfirm({ kind: "approve", request })}
-                              className="inline-flex items-center gap-1.5 rounded-full bg-dash-primary px-3.5 py-1.5 text-xs font-semibold text-white shadow-sm transition-all hover:brightness-110"
+                              className="inline-flex items-center gap-1.5 rounded-full bg-dash-primary px-3.5 py-1.5 text-xs font-semibold text-dash-ink shadow-sm transition-all hover:brightness-110"
                             >
                               <Check className="h-3.5 w-3.5" />
                               Approve
@@ -526,7 +526,7 @@ export function GuestRequests({ requests, onRefresh, onApproveRequest, isLoading
                 <X className="h-4 w-4" />
               </button>
               <div className="px-10 text-center sm:px-0 sm:pr-12 sm:text-left">
-                <p className={`${cinzel.className} text-[10px] font-semibold uppercase tracking-[0.28em] text-dash-accent`}>Join Request</p>
+                <p className={`${cinzel.className} text-[10px] font-semibold uppercase tracking-[0.28em] text-dash-ink`}>Join Request</p>
                 <h2 className={`${playfair.className} mt-1 text-[1.45rem] font-semibold leading-tight text-dash-ink sm:text-2xl`}>
                   Edit Request
                 </h2>
@@ -574,7 +574,7 @@ export function GuestRequests({ requests, onRefresh, onApproveRequest, isLoading
                     onClick={() => setSeats(seats - 1)}
                     disabled={seats <= MIN_SEATS}
                     aria-label="Fewer seats"
-                    className="flex w-12 shrink-0 items-center justify-center border-r border-dash-border text-dash-primary transition-colors hover:bg-dash-tint disabled:cursor-not-allowed disabled:text-gray-300 disabled:hover:bg-transparent"
+                    className="flex w-12 shrink-0 items-center justify-center border-r border-dash-border text-dash-ink transition-colors hover:bg-dash-tint disabled:cursor-not-allowed disabled:text-gray-300 disabled:hover:bg-transparent"
                   >
                     <Minus className="h-4 w-4" />
                   </button>
@@ -598,7 +598,7 @@ export function GuestRequests({ requests, onRefresh, onApproveRequest, isLoading
                     onClick={() => setSeats(seats + 1)}
                     disabled={seats >= MAX_SEATS}
                     aria-label="More seats"
-                    className="flex w-12 shrink-0 items-center justify-center border-l border-dash-border text-dash-primary transition-colors hover:bg-dash-tint disabled:cursor-not-allowed disabled:text-gray-300 disabled:hover:bg-transparent"
+                    className="flex w-12 shrink-0 items-center justify-center border-l border-dash-border text-dash-ink transition-colors hover:bg-dash-tint disabled:cursor-not-allowed disabled:text-gray-300 disabled:hover:bg-transparent"
                   >
                     <Plus className="h-4 w-4" />
                   </button>
@@ -655,7 +655,7 @@ export function GuestRequests({ requests, onRefresh, onApproveRequest, isLoading
                 <Button
                   type="submit"
                   disabled={busy === "update"}
-                  className="h-11 w-full rounded-full bg-dash-primary px-8 text-sm font-semibold tracking-wide text-white shadow-[0_10px_22px_-10px_color-mix(in_srgb,var(--color-dash-ink)_70%,transparent)] transition-all hover:brightness-110 active:scale-[0.99] disabled:opacity-50 sm:w-auto"
+                  className="h-11 w-full rounded-full bg-dash-primary px-8 text-sm font-semibold tracking-wide text-dash-ink shadow-[0_10px_22px_-10px_color-mix(in_srgb,var(--color-dash-ink)_70%,transparent)] transition-all hover:brightness-110 active:scale-[0.99] disabled:opacity-50 sm:w-auto"
                 >
                   {busy === "update" ? (
                     <span className="flex items-center gap-2">
@@ -681,9 +681,9 @@ export function GuestRequests({ requests, onRefresh, onApproveRequest, isLoading
           {confirm.kind === "approve" ? (
             <>
               <span className="dash-pop-badge mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-dash-tint ring-8 ring-dash-surface">
-                <UserPlus className="h-6 w-6 text-dash-primary" />
+                <UserPlus className="h-6 w-6 text-dash-ink" />
               </span>
-              <p className={`${cinzel.className} mt-4 text-[10px] font-semibold uppercase tracking-[0.3em] text-dash-accent`}>Approve request</p>
+              <p className={`${cinzel.className} mt-4 text-[10px] font-semibold uppercase tracking-[0.3em] text-dash-ink`}>Approve request</p>
               <h3 id="req-confirm-title" className={`${playfair.className} mt-1 text-[1.4rem] font-semibold leading-tight text-dash-ink`}>
                 Add to your guest list?
               </h3>
@@ -779,7 +779,7 @@ export function GuestRequests({ requests, onRefresh, onApproveRequest, isLoading
               <span className="dash-pop-badge flex h-[4.5rem] w-[4.5rem] items-center justify-center rounded-full border-4 border-dash-bg bg-white shadow-lg">
                 <span
                   className={`flex h-12 w-12 items-center justify-center rounded-full ${
-                    done.kind === "deleted" ? "bg-dash-danger-soft text-dash-danger-text" : "bg-dash-tint text-dash-primary"
+                    done.kind === "deleted" ? "bg-dash-danger-soft text-dash-danger-text" : "bg-dash-tint text-dash-ink"
                   }`}
                 >
                   {done.kind === "deleted" ? (
@@ -808,7 +808,7 @@ export function GuestRequests({ requests, onRefresh, onApproveRequest, isLoading
               </p>
               <Button
                 onClick={() => setDone(null)}
-                className="mt-6 h-11 w-full rounded-full bg-dash-primary text-sm font-semibold tracking-wide text-white shadow-[0_10px_22px_-10px_color-mix(in_srgb,var(--color-dash-ink)_70%,transparent)] transition-all hover:brightness-110 active:scale-[0.99]"
+                className="mt-6 h-11 w-full rounded-full bg-dash-primary text-sm font-semibold tracking-wide text-dash-ink shadow-[0_10px_22px_-10px_color-mix(in_srgb,var(--color-dash-ink)_70%,transparent)] transition-all hover:brightness-110 active:scale-[0.99]"
               >
                 Done
               </Button>

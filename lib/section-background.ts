@@ -13,16 +13,16 @@ export const sectionBackground = `
   radial-gradient(920px 520px at 50% 6%, color-mix(in srgb, white 70%, transparent) 0%, transparent 55%),
   radial-gradient(640px 420px at 12% 88%, color-mix(in srgb, var(--color-highlight) 30%, transparent) 0%, transparent 58%),
   radial-gradient(560px 380px at 92% 78%, color-mix(in srgb, var(--color-motif-yellow) 18%, transparent) 0%, transparent 55%),
-  linear-gradient(180deg, color-mix(in srgb, #D9A08C 45%, #FFF8F2) 0%, var(--color-motif-cream) 45%, var(--invite-page-bg) 100%)
+  linear-gradient(180deg, color-mix(in srgb, #FAF3DE 45%, #FAF3DE) 0%, var(--color-motif-cream) 45%, var(--invite-page-bg) 100%)
 `.trim()
 
 export const sectionText = {
   title: "var(--color-welcome-navy)",
-  script: "var(--color-welcome-green)",
+  script: "var(--color-welcome-heading)",
   body: "var(--color-welcome-text)",
   heading: "var(--color-welcome-navy)",
   label: "var(--color-welcome-heading)",
-  accent: "var(--color-welcome-green)",
+  accent: "var(--color-welcome-heading)",
 } as const
 
 export const sectionDividerLineStyle = {

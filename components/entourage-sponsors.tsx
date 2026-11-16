@@ -79,7 +79,7 @@ function FieldLabel({ htmlFor, children, required = false }: { htmlFor?: string;
     <label htmlFor={htmlFor} className="flex items-center justify-between gap-2 text-[13px] font-medium text-dash-ink">
       <span>{children}</span>
       {required ? (
-        <span className="rounded-full bg-dash-tint px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-dash-primary">Required</span>
+        <span className="rounded-full bg-dash-tint px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-dash-ink">Required</span>
       ) : (
         <span className="text-[10px] font-medium uppercase tracking-wide text-gray-400">Optional</span>
       )}
@@ -162,7 +162,7 @@ function RoleCombobox({
         tabIndex={-1}
         onClick={() => setOpen((o) => !o)}
         aria-label="Show roles"
-        className="absolute right-2 top-1/2 -translate-y-1/2 rounded-md p-1 text-gray-400 hover:text-dash-primary"
+        className="absolute right-2 top-1/2 -translate-y-1/2 rounded-md p-1 text-gray-400 hover:text-dash-ink"
       >
         <ChevronDown className={`h-4 w-4 transition-transform ${open ? "rotate-180" : ""}`} />
       </button>
@@ -186,7 +186,7 @@ function RoleCombobox({
               }`}
             >
               {option}
-              {option.toLowerCase() === q && <Check className="h-3.5 w-3.5 text-dash-primary" />}
+              {option.toLowerCase() === q && <Check className="h-3.5 w-3.5 text-dash-ink" />}
             </li>
           ))}
           {q && !exact && (
@@ -249,7 +249,7 @@ function FormSheet({
               aria-expanded={showHelp}
               aria-controls="form-sheet-help"
               className={`absolute left-3 top-3 flex h-9 w-9 items-center justify-center rounded-full border shadow-sm transition-colors sm:left-auto sm:right-16 sm:top-5 ${
-                showHelp ? "border-dash-accent bg-dash-accent text-white" : "border-dash-border bg-white text-dash-primary hover:bg-dash-tint"
+                showHelp ? "border-dash-accent bg-dash-accent text-dash-ink" : "border-dash-border bg-white text-dash-ink hover:bg-dash-tint"
               }`}
             >
               <Info className="h-4 w-4" />
@@ -264,7 +264,7 @@ function FormSheet({
             <X className="h-4 w-4" />
           </button>
           <div className={`px-10 text-center sm:px-0 sm:text-left ${help ? "sm:pr-24" : "sm:pr-12"}`}>
-            <p className={`${cinzel.className} text-[10px] font-semibold uppercase tracking-[0.28em] text-dash-accent`}>{eyebrow}</p>
+            <p className={`${cinzel.className} text-[10px] font-semibold uppercase tracking-[0.28em] text-dash-ink`}>{eyebrow}</p>
             <h2 className={`${playfair.className} mt-1 text-[1.45rem] font-semibold leading-tight text-dash-ink sm:text-2xl`}>{title}</h2>
             <p className="mx-auto mt-1.5 max-w-xs text-[11px] leading-relaxed text-gray-500 sm:mx-0 sm:max-w-none sm:text-xs">{subtitle}</p>
           </div>
@@ -277,7 +277,7 @@ function FormSheet({
               <ul className="mt-1.5 space-y-1">
                 {help.points.map((point, i) => (
                   <li key={i} className="flex gap-2">
-                    <Check className="mt-0.5 h-3.5 w-3.5 shrink-0 text-dash-accent" />
+                    <Check className="mt-0.5 h-3.5 w-3.5 shrink-0 text-dash-ink" />
                     <span>{point}</span>
                   </li>
                 ))}
@@ -299,7 +299,7 @@ function FormSheet({
             <Button
               type="submit"
               disabled={busy}
-              className="h-11 w-full rounded-full bg-dash-primary px-8 text-sm font-semibold tracking-wide text-white shadow-[0_10px_22px_-10px_color-mix(in_srgb,var(--color-dash-ink)_70%,transparent)] transition-all hover:brightness-110 active:scale-[0.99] disabled:opacity-50 sm:w-auto"
+              className="h-11 w-full rounded-full bg-dash-primary px-8 text-sm font-semibold tracking-wide text-dash-ink shadow-[0_10px_22px_-10px_color-mix(in_srgb,var(--color-dash-ink)_70%,transparent)] transition-all hover:brightness-110 active:scale-[0.99] disabled:opacity-50 sm:w-auto"
             >
               {busy ? (
                 <span className="flex items-center gap-2">
@@ -576,7 +576,7 @@ export function EntourageSponsors({
           type="button"
           onClick={() => (activeSubTab === "entourage" ? onRefreshEntourage() : onRefreshSponsors())}
           disabled={isLoading}
-          className="inline-flex items-center gap-1.5 rounded-full border border-dash-border bg-white px-3 py-1.5 text-xs font-medium text-dash-primary transition-colors hover:bg-dash-surface disabled:opacity-50"
+          className="inline-flex items-center gap-1.5 rounded-full border border-dash-border bg-white px-3 py-1.5 text-xs font-medium text-dash-ink transition-colors hover:bg-dash-surface disabled:opacity-50"
         >
           <RefreshCw className={`h-3.5 w-3.5 ${isLoading ? "animate-spin" : ""}`} />
           Refresh
@@ -596,7 +596,7 @@ export function EntourageSponsors({
       {/* Stats */}
       <div className="grid grid-cols-2 gap-2.5 sm:gap-4 lg:grid-cols-4">
         {[
-          { label: "Entourage", value: entourage.length, tone: "border-dash-border bg-white text-dash-primary" },
+          { label: "Entourage", value: entourage.length, tone: "border-dash-border bg-white text-dash-ink" },
           { label: "Role groups", value: roleCategories.length, tone: "border-amber-200 bg-amber-50 text-amber-700" },
           { label: "Sponsor pairs", value: principalSponsors.length, tone: "border-purple-200 bg-purple-50 text-purple-700" },
           { label: "Sponsors", value: sponsorPeople, tone: "border-blue-200 bg-blue-50 text-blue-700" },
@@ -633,7 +633,7 @@ export function EntourageSponsors({
               {tab.icon}
               <span className="sm:hidden">{tab.short}</span>
               <span className="hidden sm:inline">{tab.label}</span>
-              <span className={`rounded-full px-1.5 py-0.5 text-[10px] ${active ? "bg-dash-tint text-dash-primary" : "bg-white/70 text-gray-500"}`}>
+              <span className={`rounded-full px-1.5 py-0.5 text-[10px] ${active ? "bg-dash-tint text-dash-ink" : "bg-white/70 text-gray-500"}`}>
                 {tab.count}
               </span>
             </button>
@@ -653,7 +653,7 @@ export function EntourageSponsors({
             className="w-full rounded-lg border border-dash-border bg-white py-2.5 pl-10 pr-4 outline-none focus:ring-2 focus:ring-dash-focus"
           />
         </div>
-        <Button onClick={openAdd} className="h-11 rounded-full bg-dash-primary px-6 text-white hover:brightness-110 sm:h-10">
+        <Button onClick={openAdd} className="h-11 rounded-full bg-dash-primary px-6 text-dash-ink hover:brightness-110 sm:h-10">
           <Plus className="mr-1.5 h-4 w-4" />
           {activeSubTab === "entourage" ? "Add Member" : "Add Sponsors"}
         </Button>
@@ -678,7 +678,7 @@ export function EntourageSponsors({
                   setSearchQuery("")
                 }}
                 className={`whitespace-nowrap rounded-full border px-3 py-1.5 text-xs font-medium transition-colors ${
-                  active ? "border-dash-accent bg-dash-accent text-white" : "border-dash-border bg-white text-gray-600 hover:text-dash-ink"
+                  active ? "border-dash-accent bg-dash-accent text-dash-ink" : "border-dash-border bg-white text-gray-600 hover:text-dash-ink"
                 }`}
               >
                 {list.label} <span className={active ? "text-white/80" : "text-gray-400"}>{list.path}</span>
@@ -699,7 +699,7 @@ export function EntourageSponsors({
                 key={cat}
                 onClick={() => setRoleFilter(cat)}
                 className={`whitespace-nowrap rounded-full border px-3 py-1.5 text-xs font-medium transition-colors ${
-                  active ? "border-dash-accent bg-dash-accent text-white" : "border-dash-border bg-white text-gray-600 hover:text-dash-ink"
+                  active ? "border-dash-accent bg-dash-accent text-dash-ink" : "border-dash-border bg-white text-gray-600 hover:text-dash-ink"
                 }`}
               >
                 {cat === "all" ? "All roles" : cat} <span className={active ? "text-white/80" : "text-gray-400"}>{count}</span>
@@ -727,7 +727,7 @@ export function EntourageSponsors({
               {filteredEntourage.map((member, index) => (
                 <div key={`${member.Name}-${index}`} className="rounded-xl border border-dash-border bg-white p-4 shadow-sm">
                   <div className="flex items-start gap-3">
-                    <span className={`${cinzel.className} flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-dash-tint text-xs font-semibold text-dash-primary`}>
+                    <span className={`${cinzel.className} flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-dash-tint text-xs font-semibold text-dash-ink`}>
                       {member.Name.trim().charAt(0).toUpperCase() || "?"}
                     </span>
                     <div className="min-w-0 flex-1">
@@ -825,7 +825,7 @@ export function EntourageSponsors({
             {filteredSponsors.map((sponsor, index) => (
               <div key={`${sponsorLabel(sponsor)}-${index}`} className="group rounded-2xl border border-dash-border bg-white p-4 shadow-sm transition-shadow hover:shadow-md">
                 <div className="flex items-center justify-between">
-                  <p className={`${cinzel.className} text-[10px] font-semibold uppercase tracking-[0.24em] text-dash-accent`}>Pair {index + 1}</p>
+                  <p className={`${cinzel.className} text-[10px] font-semibold uppercase tracking-[0.24em] text-dash-ink`}>Pair {index + 1}</p>
                   <HeartHandshake className="h-4 w-4 text-dash-line" aria-hidden />
                 </div>
                 <div className="mt-3 grid grid-cols-[1fr_auto_1fr] items-center gap-2">
@@ -869,7 +869,7 @@ export function EntourageSponsors({
           help={{
             title: (
               <>
-                <span className="text-dash-primary">{entourageFormData.Name.trim() || "This member"}</span> will appear in the Entourage section of
+                <span className="text-dash-ink">{entourageFormData.Name.trim() || "This member"}</span> will appear in the Entourage section of
                 your invitation.
               </>
             ),
@@ -1068,7 +1068,7 @@ export function EntourageSponsors({
               <span className="dash-pop-badge flex h-[4.5rem] w-[4.5rem] items-center justify-center rounded-full border-4 border-dash-bg bg-white shadow-lg">
                 <span
                   className={`flex h-12 w-12 items-center justify-center rounded-full ${
-                    done.deleted ? "bg-dash-danger-soft text-dash-danger-text" : "bg-dash-tint text-dash-primary"
+                    done.deleted ? "bg-dash-danger-soft text-dash-danger-text" : "bg-dash-tint text-dash-ink"
                   }`}
                 >
                   {done.deleted ? <Trash2 className="h-6 w-6" /> : <Check className="h-7 w-7" strokeWidth={2.5} />}
@@ -1085,7 +1085,7 @@ export function EntourageSponsors({
               <p className="mx-auto mt-3 max-w-[17rem] text-sm leading-relaxed text-gray-600">{done.text}</p>
               <Button
                 onClick={() => setDone(null)}
-                className="mt-6 h-11 w-full rounded-full bg-dash-primary text-sm font-semibold tracking-wide text-white shadow-[0_10px_22px_-10px_color-mix(in_srgb,var(--color-dash-ink)_70%,transparent)] transition-all hover:brightness-110 active:scale-[0.99]"
+                className="mt-6 h-11 w-full rounded-full bg-dash-primary text-sm font-semibold tracking-wide text-dash-ink shadow-[0_10px_22px_-10px_color-mix(in_srgb,var(--color-dash-ink)_70%,transparent)] transition-all hover:brightness-110 active:scale-[0.99]"
               >
                 Done
               </Button>

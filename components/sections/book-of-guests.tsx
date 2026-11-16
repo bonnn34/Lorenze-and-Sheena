@@ -30,8 +30,8 @@ const aboveTheBeyond = localFont({
 // Palette lives in globals.css → motif / welcome tokens. No yellow for text (hard to read):
 // deep slate headings, slate body text, slate-blue buttons and guest names.
 const TEAL = "var(--color-welcome-navy)"
-const IVORY = "#FFF8F2"
-const PAPER = "#FFF8F2"
+const IVORY = "#FAF3DE"
+const PAPER = "#FAF3DE"
 const NAVY = TEAL
 const BODY = "var(--color-welcome-text)"
 const ACCENT = "var(--color-welcome-heading)"
@@ -40,10 +40,10 @@ const TEAL_SOFT = "color-mix(in srgb, var(--color-welcome-text) 70%, white)"
 // Slate blue — guest names
 const LEAF = "var(--color-motif-accent)"
 const DEEP_GRADIENT =
-  "linear-gradient(180deg, #9B6554 0%, color-mix(in srgb, #9B6554 72%, #875547) 100%)"
+  "linear-gradient(180deg, #F8EAAE 0%, color-mix(in srgb, #F8EAAE 72%, #F1D56C) 100%)"
 // Dusty blue → slate blue — monograms
 const SAGE_GRADIENT =
-  "linear-gradient(180deg, var(--color-motif-medium) 0%, var(--color-motif-accent) 100%)"
+  "linear-gradient(180deg, var(--color-motif-medium) 0%, var(--color-primary-hover) 100%)"
 
 // Section background = the circle pattern used across the invitation (PlainBubbles paints the base)
 const sectionBg = "var(--color-bg-pattern-base)"
@@ -428,7 +428,7 @@ export function BookOfGuests({ background = true }: { background?: boolean } = {
             >
               <RefreshCw
                 className={`h-3.5 w-3.5 sm:h-4 sm:w-4 transition-transform duration-500 ${isRefreshing ? "animate-spin" : "group-hover:rotate-180"}`}
-                style={{ color: IVORY }}
+                style={{ color: "#40392F" }}
                 aria-hidden
               />
             </button>
@@ -442,7 +442,7 @@ export function BookOfGuests({ background = true }: { background?: boolean } = {
                 }}
                 aria-hidden
               >
-                <Users className="h-5 w-5" style={{ color: IVORY }} />
+                <Users className="h-5 w-5" style={{ color: "#40392F" }} />
               </div>
               <p
                 className={`${cinzel.className} ${ct.label} uppercase tracking-[0.22em] font-semibold mb-3 sm:mb-4`}
@@ -600,7 +600,7 @@ export function BookOfGuests({ background = true }: { background?: boolean } = {
                           }}
                           aria-hidden
                         >
-                          <span className={`${cinzel.className} text-[0.95rem] font-semibold tracking-[0.06em]`} style={{ color: IVORY }}>
+                          <span className={`${cinzel.className} text-[0.95rem] font-semibold tracking-[0.06em]`} style={{ color: "#40392F" }}>
                             {getInitials(guest.name)}
                           </span>
                         </div>
@@ -609,7 +609,7 @@ export function BookOfGuests({ background = true }: { background?: boolean } = {
                           {guest.isVip && (
                             <span
                               className={`${cinzel.className} mb-1 inline-flex items-center gap-1 rounded-full px-2 py-[3px] text-[0.55rem] font-semibold uppercase leading-none tracking-[0.14em]`}
-                              style={{ background: DEEP_GRADIENT, color: IVORY }}
+                              style={{ background: DEEP_GRADIENT, color: "#40392F" }}
                             >
                               <Crown className="h-2.5 w-2.5" aria-hidden />
                               {copy.vipLabel}
@@ -676,7 +676,7 @@ export function BookOfGuests({ background = true }: { background?: boolean } = {
                                 >
                                   <span
                                     className={`${cinzel.className} flex h-5 w-5 shrink-0 items-center justify-center rounded-full text-[0.55rem] font-semibold leading-none`}
-                                    style={{ background: SAGE_GRADIENT, color: IVORY }}
+                                    style={{ background: SAGE_GRADIENT, color: "#40392F" }}
                                     aria-hidden
                                   >
                                     {getInitials(companion.name).slice(0, 1)}
@@ -700,7 +700,7 @@ export function BookOfGuests({ background = true }: { background?: boolean } = {
                                     type="button"
                                     onClick={() => toggleCompanions(cardId)}
                                     className={`${cinzel.className} inline-flex h-[1.65rem] items-center rounded-full px-2.5 text-[0.55rem] font-semibold uppercase leading-none tracking-[0.12em] transition-all hover:brightness-110`}
-                                    style={{ background: DEEP_GRADIENT, color: IVORY }}
+                                    style={{ background: DEEP_GRADIENT, color: "#40392F" }}
                                     aria-expanded={expanded}
                                   >
                                     {expanded ? copy.companionsLess : copy.companionsMore.replace("{count}", String(hidden))}
@@ -737,7 +737,7 @@ export function BookOfGuests({ background = true }: { background?: boolean } = {
                   style={refreshButtonStyle}
                   aria-label={copy.prevLabel}
                 >
-                  <ChevronLeft className="h-4 w-4" style={{ color: IVORY }} aria-hidden />
+                  <ChevronLeft className="h-4 w-4" style={{ color: "#40392F" }} aria-hidden />
                 </button>
                 <div className="flex items-center gap-1.5">
                   {Array.from({ length: pageCount }).map((_, idx) => {
@@ -769,7 +769,7 @@ export function BookOfGuests({ background = true }: { background?: boolean } = {
                   style={refreshButtonStyle}
                   aria-label={copy.nextLabel}
                 >
-                  <ChevronRight className="h-4 w-4" style={{ color: IVORY }} aria-hidden />
+                  <ChevronRight className="h-4 w-4" style={{ color: "#40392F" }} aria-hidden />
                 </button>
               </div>
             )}
