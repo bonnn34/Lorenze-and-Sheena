@@ -67,10 +67,10 @@ export type AttireColor = string | { name: string; hex: string }
 
 // ── The couple ──────────────────────────────────────────────────────────────
 const COUPLE = {
-  bride: "Sheena Pontillas",
-  brideNickname: "Sheena Pontillas",
-  groom: "Lorenze Quiapo",
-  groomNickname: "Lorenze Quiapo",
+  bride: "Sheena B. Pontillas",
+  brideNickname: "Sheena B. Pontillas",
+  groom: "Lorenze E. Quiapo",
+  groomNickname: "Lorenze E. Quiapo",
 }
 
 // ── Date & times ────────────────────────────────────────────────────────────
