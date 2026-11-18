@@ -659,8 +659,8 @@ export const siteConfig = {
     title: "Our Love Story",
     subtitle: "ten years of choosing each other",
     // Short opening line under the title ("" hides it)
-    intro:
-      "From a high school crush to a “yes” at the crater of Mount Pinatubo, this is the story of how Yvan and Roan found their way to forever.",
+    //intro:
+      //"From a high school crush to a “yes” at the crater of Mount Pinatubo, this is the story of how Yvan and Roan found their way to forever.",
     // Small sprig above the title ("" hides it)
     headerOrnament: DECOR.headerOrnament,
     // Shown above a chapter's title when it has no date, e.g. "Chapter 03"
