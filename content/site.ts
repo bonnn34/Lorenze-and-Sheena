@@ -68,9 +68,9 @@ export type AttireColor = string | { name: string; hex: string }
 // ── The couple ──────────────────────────────────────────────────────────────
 const COUPLE = {
   bride: "Sheena Pontillas",
-  brideNickname: "Sheena",
+  brideNickname: "Sheena Pontillas",
   groom: "Lorenze Quiapo",
-  groomNickname: "Lorenze",
+  groomNickname: "Lorenze Quiapo",
 }
 
 // ── Date & times ────────────────────────────────────────────────────────────
@@ -370,7 +370,7 @@ const BRAND = {
   monogram: "/monogram/update-monogram.png", // monogram (loader, envelope, closing)
   coupleNameImage: "/Details/newcoupelNames.png", // couple-name lettering (loader, envelope)
   seal: "/monogram/update-seal.png", // envelope wax seal
-  backgroundMusic: "/background_music/Palagi - Tj Monterde Violin Cover by BOJO.mp3",
+  backgroundMusic: "/background_music/Can't Help Falling In Love (Instrumental) Wedding March.mp3",
 }
 
 // Couple photos reused across the site (gallery, loader, reminders, snap & share, closing)
@@ -534,7 +534,7 @@ export const siteConfig = {
     // couple / wedding / ceremony; corners from `cornerDecos` below; headline from `headline`
     poster: {
       // Couple photo with a transparent background, shown in the middle (PNG/WebP; "" to hide)
-      coupleImage: "/Details/couple-lakeside-no-background.png",
+      coupleImage: "/Details/Smiling Couple in Wedding Attire.png",
       kicker: "Together with their families", // small line above "Save the Date" ("" to hide)
       // Short lines either side of the couple, one entry per line ([] to hide a side)
       sideLeft: ["Two hearts", "One love", "Forever"],
@@ -638,7 +638,7 @@ export const siteConfig = {
   },
   // Couple video (components/sections/couple-video.tsx)
   coupleVideo: {
-    enabled: false, // Set to true to show the couple video section
+    enabled: true, // Set to true to show the couple video section
     title: "A Glimpse of Our Love",
     script: "Our Journey Together",
     subtitle: "Watch the journey that brought our hearts together",
@@ -648,9 +648,9 @@ export const siteConfig = {
     // (A YouTube link pasted here is detected and played through YouTube.)
     videoSrc: "",
     // YouTube video ID or full link (youtu.be/…, watch?v=…, /shorts/…, /embed/…)
-    youtubeId: "poC3qotRpO4",
+    youtubeId: "6bRVPxi4tVg",
     // Cover image shown before the video plays
-    thumbnail: "/desktop-background/couple (19).webp",
+    thumbnail: "/desktop-background/couple (9).webp",
     thumbnailAlt: `${COUPLE_LABEL} — video cover`,
     playLabel: "Play our video",
   },
@@ -691,74 +691,44 @@ export const siteConfig = {
     // /public/mobile-background. Add, remove or reorder chapters freely — sides alternate on their own.
 
 chapters: [
-  {
+   {
     date: "Where It All Began",
-    title: "The Beginning of Our Story",
+    title: "A Simple Chat, A Special Connection",
     image: "/mobile-background/couple (17).webp",
     imageAlt: "{groom} and {bride} together",
     imagePosition: "center 25%",
     paragraphs: [
-      "Every love story has a beginning, and theirs started with a simple moment that would eventually mean everything. When {groom} and {bride} first crossed paths, neither could have imagined the beautiful journey that awaited them. What seemed like an ordinary encounter would one day become the start of something extraordinary.",
+      "What began with a simple chat blossomed into a love neither distance nor time could diminish. With {groom} assigned in Mindanao, their story unfolded through messages, sweet conversations, and his sincere efforts to win {bride}'s heart. After six months of patience and genuine affection, she finally said YES, marking the beginning of their journey together.",
     ],
   },
   {
-    date: "The First Chapter",
-    title: "Getting to Know Each Other",
+    date: "Six Months Later",
+    title: "Love Beyond the Distance",
     image: "/mobile-background/couple (9).webp",
     imageAlt: "{groom} and {bride} smiling together",
     imagePosition: "center 35%",
     paragraphs: [
-      "What began as a simple connection slowly grew through conversations, laughter, and moments of getting to know one another. With every shared story and every little smile, {groom} and {bride} discovered something special in each other's company.",
+      "Their love story was never without challenges. Miles separated them, days turned into months, and countless moments were spent longing for each other's embrace. Yet, through every goodbye, every sacrifice, and every reunion, they held on to the love they had found and continued choosing each other despite the distance.",
     ],
   },
   {
-    date: "Little Moments",
-    title: "The Beauty of Simple Things",
-    image: "/mobile-background/couple (10).webp",
-    imageAlt: "{groom} and {bride} together",
-    imagePosition: "center 20%",
-    paragraphs: [
-      "Sometimes, the most meaningful memories are made in the simplest moments. From unexpected laughter to heartfelt conversations, every experience brought them another memory to treasure. Slowly, those ordinary days became part of a story neither would ever forget.",
-    ],
-  },
-  {
-    date: "Growing Closer",
-    title: "A Connection Worth Cherishing",
+    date: "Seven Years of Love",
+    title: "Through Every Mile, Still Together",
     image: "/mobile-background/couple (13).webp",
     imageAlt: "{groom} and {bride} together",
     imagePosition: "center 25%",
     paragraphs: [
-      "As time passed, their connection continued to grow. They began to understand each other's dreams, personalities, and little imperfections. Somewhere along the way, they realized that being together made even the simplest days feel a little more special.",
+      "Seven beautiful years brought countless memories, sacrifices, and lessons in patience. Their journey taught them that love is not measured by the distance between two people, but by the commitment to stay, trust, and keep choosing one another. Every challenge they faced only made their bond stronger and their love more meaningful.",
     ],
   },
   {
-    date: "Something Special",
-    title: "When Friendship Turned Into Love",
-    image: "/mobile-background/couple (14).webp",
-    imageAlt: "{groom} and {bride} laughing together",
-    imagePosition: "center 25%",
-    paragraphs: [
-      "What started as a simple connection gradually blossomed into something deeper. The little things began to mean more, and every moment together became something to look forward to. Without even realizing it, {groom} and {bride} were writing the first pages of their own beautiful love story.",
-    ],
-  },
-  {
-    date: "Falling Into Place",
-    title: "A Love That Felt Like Home",
-    image: "/mobile-background/couple (18).webp",
-    imageAlt: "{groom} and {bride} together",
-    imagePosition: "center 25%",
-    paragraphs: [
-      "With every shared memory, their feelings grew stronger. Through laughter, meaningful conversations, and life's little adventures, they found happiness and comfort in one another. Love became more than just a feeling. It became a friendship, a safe place, and a beautiful reason to keep choosing each other.",
-    ],
-  },
-  {
-    date: "The Day We Said Yes",
-    title: "The Beginning of Something Beautiful",
+    date: "Forever Begins",
+    title: "From Long Distance to a Lifetime Together",
     image: "/mobile-background/couple (6).webp",
     imageAlt: "{groom} and {bride} together",
     imagePosition: "center 25%",
     paragraphs: [
-      "And then came the moment that marked a new chapter in their journey. {groom} and {bride} chose to turn their growing love into a beautiful commitment to one another. From that day forward, they continued building memories, celebrating milestones, overcoming challenges, and discovering new reasons to fall in love with each other every day.",
+      "Now, after seven years of loving from afar, the distance that once defined their story will no longer stand between them. What started with a simple hello has led them to a lifetime of togetherness. Seven years, countless sacrifices, one enduring love, and finally, two hearts becoming one, forever sealed with an I DO.",
     ],
   },
 ] as StoryChapter[],
@@ -1028,7 +998,7 @@ chapters: [
       },
       {
         show: true,
-        time: "3:30 PM",
+        time: "1:00 PM",
         title: "Wedding Ceremony",
         description: "We exchange our vows before God, family and friends.",
         location: "{ceremony}",
@@ -1037,7 +1007,7 @@ chapters: [
       },
       {
         show: true,
-        time: "4:30 PM",
+        time: "3:00 PM",
         title: "Pictorials & Recessional",
         description: "Join us for photos with the newlyweds.",
         location: "{ceremony}",
@@ -1488,7 +1458,7 @@ chapters: [
     //          Guests can tap the QR to enlarge it and save it with the "Save QR" button.
     //   accountNumber: shown under the name (display only)
     //   With 2+ visible accounts, guests switch between them with a toggle; each shows its QR and a "Save QR" button
-    showAccounts: true,
+    showAccounts: false,
     accountsTitle: "For e-gifts",
     accountsNote: "Choose an account, then scan its QR — tap the QR to enlarge.",
     saveQrLabel: "Save QR",

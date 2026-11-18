@@ -563,20 +563,25 @@ const ROLE_CATEGORY_ORDER = [
   // Side-by-side pairs (see PAIRED_COLUMN_SECTIONS)
   "Little Groomsmen",
   "Little Bridesmaids",
-  // Ring | Coin side by side, Bible centered below (see BEARER_BLOCK_CATEGORIES)
+  // Ring | Coin side by side, Bible and Wedding Banner Bearers centered below
+  // (see BEARER_BLOCK_CATEGORIES)
   "Ring Bearer",
   "Coin Bearer",
   "Bible Bearer",
+  "Wedding Banner Bearer",
+  // Flower Girls | Little Escort paired side by side
   "Flower Ladies",
+  "Little Escort",
   "Escorts",
   "Petal Maidens",
 ]
 
-const BEARER_BLOCK_CATEGORIES = ["Ring Bearer", "Coin Bearer", "Bible Bearer"] as const
+const BEARER_BLOCK_CATEGORIES = ["Ring Bearer", "Coin Bearer", "Bible Bearer", "Wedding Banner Bearer"] as const
 
 // Two categories shown as left | right columns under their own titles
 const PAIRED_COLUMN_SECTIONS: { key: string; left: string; right: string }[] = [
   { key: "LittleGroomsmenBridesmaids", left: "Little Groomsmen", right: "Little Bridesmaids" },
+  { key: "FlowerGirlsLittleEscort", left: "Flower Ladies", right: "Little Escort" },
 ]
 
 // Secondary sponsor groups whose names are split into two columns
@@ -621,13 +626,16 @@ function normalizeRoleCategory(category: string): string {
   if (normalized.toLowerCase() === "peer sponsors") {
     return "Peer Sponsors"
   }
-  if (
-    normalized.toLowerCase() === "flower ladies" ||
-    normalized.toLowerCase() === "flower girls"
-  ) {
-    return "Flower Ladies"
-  }
-  return normalized
+if (
+  normalized.toLowerCase() === "flower ladies" ||
+  normalized.toLowerCase() === "flower girls"
+) {
+  return "Flower Ladies"
+}
+
+if (/^little escorts?$/i.test(normalized)) return "Little Escort"
+
+return normalized
 }
 
 function isCoupleMember(member: EntourageMember): boolean {
@@ -1361,13 +1369,14 @@ export function Entourage({ sponsorsList }: { sponsorsList?: SponsorsList } = {}
                   )
                 }
 
-                // Ring Bearer | Coin Bearer side by side, Bible Bearer centered below
+                // Ring Bearer | Coin Bearer side by side, Bible and Wedding Banner Bearers centered below
                 if ((BEARER_BLOCK_CATEGORIES as readonly string[]).includes(category)) {
                   const firstBearer = BEARER_BLOCK_CATEGORIES.find((c) => (grouped[c]?.length ?? 0) > 0)
                   if (category !== firstBearer) return null
                   const ringBearer = grouped["Ring Bearer"] || []
                   const coinBearer = grouped["Coin Bearer"] || []
                   const bibleBearer = grouped["Bible Bearer"] || []
+                  const bannerBearer = grouped["Wedding Banner Bearer"] || []
                   const hasSidePair = ringBearer.length > 0 || coinBearer.length > 0
 
                   return (
@@ -1391,6 +1400,21 @@ export function Entourage({ sponsorsList }: { sponsorsList?: SponsorsList } = {}
                             <div className="flex flex-col items-center gap-5 sm:gap-6">
                               {bibleBearer.map((member, idx) => (
                                 <NameItem key={`bible-bearer-${idx}-${member.name}`} member={member} align="center" />
+                              ))}
+                            </div>
+                          </div>
+                        </TwoColumnLayout>
+                      )}
+                      {bannerBearer.length > 0 && (
+                        <TwoColumnLayout singleTitle="Wedding Banner Bearer" centerContent={true}>
+                          <div className="col-span-full">
+                            <div className="flex flex-col items-center gap-5 sm:gap-6">
+                              {bannerBearer.map((member, idx) => (
+                                <NameItem
+                                  key={`banner-bearer-${idx}-${member.name}`}
+                                  member={member}
+                                  align="center"
+                                />
                               ))}
                             </div>
                           </div>
@@ -1420,7 +1444,13 @@ export function Entourage({ sponsorsList }: { sponsorsList?: SponsorsList } = {}
                         </div>
                       )}
                       <TwoColumnLayout
-                        leftTitle={leftMembers.length > 0 ? pairedSection.left : undefined}
+                        leftTitle={
+                          leftMembers.length > 0
+                            ? pairedSection.left === "Flower Ladies"
+                              ? "Flower Girls"
+                              : pairedSection.left
+                            : undefined
+                        }
                         rightTitle={rightMembers.length > 0 ? pairedSection.right : undefined}
                       >
                         {renderPairRows(pairedSection.key, leftMembers, rightMembers)}
@@ -1470,63 +1500,6 @@ export function Entourage({ sponsorsList }: { sponsorsList?: SponsorsList } = {}
                   }
                   // Skip rendering for "Little Bride" since it's already rendered above
                   return null
-                }
-
-                if (category === "Flower Ladies") {
-                  if (members.length === 0) return null
-
-                  return (
-                    <div key="FlowerLadies">
-                      {categoryIndex > 0 && (
-                        <div className="flex justify-center py-1 sm:py-2.5 md:py-3 mb-1.5 sm:mb-2.5 md:mb-3">
-                          <GroupDivider />
-                        </div>
-                      )}
-                      <TwoColumnLayout singleTitle="Flower Girls" centerContent={true}>
-                        {members.length === 2 ? (
-                          <>
-                            <div className="px-0.5 sm:px-1 md:px-1.5 min-w-0 overflow-hidden">
-                              <NameItem member={members[0]} align="right" />
-                            </div>
-                            <div className="px-0.5 sm:px-1 md:px-1.5 min-w-0 overflow-hidden">
-                              <NameItem member={members[1]} align="left" />
-                            </div>
-                          </>
-                        ) : (
-                          (() => {
-                            const half = Math.ceil(members.length / 2)
-                            const left = members.slice(0, half)
-                            const right = members.slice(half)
-                            const maxLen = Math.max(left.length, right.length)
-                            const rows = []
-                            for (let i = 0; i < maxLen; i++) {
-                              const l = left[i]
-                              const r = right[i]
-                              rows.push(
-                                <React.Fragment key={`flower-lady-row-${i}`}>
-                                  <div className="px-0.5 sm:px-1 md:px-1.5 min-w-0 overflow-hidden">
-                                    {l ? (
-                                      <NameItem member={l} align="right" />
-                                    ) : (
-                                      <div className="py-0.5 sm:py-1 md:py-1.5" />
-                                    )}
-                                  </div>
-                                  <div className="px-0.5 sm:px-1 md:px-1.5 min-w-0 overflow-hidden">
-                                    {r ? (
-                                      <NameItem member={r} align="left" />
-                                    ) : (
-                                      <div className="py-0.5 sm:py-1 md:py-1.5" />
-                                    )}
-                                  </div>
-                                </React.Fragment>
-                              )
-                            }
-                            return rows
-                          })()
-                        )}
-                      </TwoColumnLayout>
-                    </div>
-                  )
                 }
 
                 // Special handling for Bridesmaids and Groomsmen - combine into single two-column layout
