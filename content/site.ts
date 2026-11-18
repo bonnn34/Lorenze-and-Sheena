@@ -390,7 +390,7 @@ const COUPLE_PORTRAITS = {
 // Sliding photo marquee behind the loader and envelope.
 // Phones use the portrait shots in /public/mobile-background, desktop the landscape
 // shots in /public/desktop-background — update the counts when files are added/removed.
-const MARQUEE_PHOTO_COUNT = 18
+const MARQUEE_PHOTO_COUNT = 26
 const MARQUEE_PHOTOS = Array.from(
   { length: MARQUEE_PHOTO_COUNT },
   (_, i) => `/mobile-background/couple (${i + 1}).webp`,
