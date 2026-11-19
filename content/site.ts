@@ -657,7 +657,7 @@ export const siteConfig = {
   // Our love story (components/sections/love-story.tsx + StorySection)
   loveStory: {
     title: "Our Love Story",
-    //subtitle: "ten years of choosing each other",
+    subtitle: "",
     // Short opening line under the title ("" hides it)
     //intro:
       //"From a high school crush to a “yes” at the crater of Mount Pinatubo, this is the story of how Yvan and Roan found their way to forever.",
