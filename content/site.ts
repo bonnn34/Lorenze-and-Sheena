@@ -1380,11 +1380,6 @@ chapters: [
           "Yes, parking for cars and motorcycles is available inside the venue. Arriving a little early will give you time to park comfortably.",
       },
       {
-        question: "Will the ceremony be unplugged?",
-        answer:
-          "Mostly. You may take a few photos, but please keep it minimal and avoid blocking or crowding our official photographers. We would love for everyone to stay present with us in the moment — professional photos will be shared after the wedding.",
-      },
-      {
         question: "Can I take photos and videos during the reception?",
         answer:
           "Absolutely! Capture all the joy you can. We would love to see your snaps, so please upload them through [Snap and Share](#snap-share).",
@@ -1393,11 +1388,6 @@ chapters: [
         question: "What if I have dietary restrictions or allergies?",
         answer:
           "Please let us know about any dietary restrictions or allergies when you RSVP so we can make sure you enjoy the celebration comfortably.",
-      },
-      {
-        question: "What gift should we give?",
-        answer:
-          "Your presence and prayers are the greatest gifts of all.",
       },
       {
         question: "Can I share the invitation online?",

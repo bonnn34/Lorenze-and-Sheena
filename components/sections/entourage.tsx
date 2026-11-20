@@ -574,6 +574,7 @@ const ROLE_CATEGORY_ORDER = [
   "Little Escort",
   "Escorts",
   "Petal Maidens",
+  "LITURGICAL READINGS",
 ]
 
 const BEARER_BLOCK_CATEGORIES = ["Ring Bearer", "Coin Bearer", "Bible Bearer", "Wedding Banner Bearer"] as const
